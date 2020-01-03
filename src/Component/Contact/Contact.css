@@ -1,0 +1,68 @@
+.page{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: -20px;
+}
+.contact_us{
+    background-color: rgb(165, 158, 62);  
+    width: 750px;
+    height: 900px;
+      padding-top: 126px;
+
+}
+.heading{
+    padding-top: 164px;
+ 
+}
+.space{
+    background-color: white;
+}
+.contactinfo{
+    background-color:white;
+    padding-left: 13px;
+    text-align: left;
+}
+.info{
+    color:white;
+    font-family: initial;
+    /* font-stretch: extra-expanded; */
+    font-style: oblique;
+    font-size: 35px;
+    background-color: white;
+}
+.img_paddy{
+    width:100px;
+    border-radius: 50%;
+    size: 80x;
+    z-index: 2;
+    top: 139px;
+    position: relative;
+}
+.infotitle{
+    color: #a58f23;
+    font-size: 40px;
+    font-family: inherit; 
+   
+}
+.page{
+    padding: 50px;
+    margin: 50px;
+
+}
+.name{
+    border: none;
+    border-bottom-style: solid;
+    mask-border-width: 2px;
+    color: black;
+    width: 65%;
+}
+.name1{
+    padding: 20px;
+    padding-right: 35px;
+    color: black;
+}
+.submitt{
+    background-color: white;
+    border: none;
+    color: rgb(173, 167, 77);;
+}

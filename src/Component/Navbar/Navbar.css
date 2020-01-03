@@ -1,0 +1,11 @@
+.navbar{
+    height: 90px;
+ }
+ .img_paddys{
+    border-radius: 50%;
+    height: 20px;
+    width: 70px;
+ }
+ .nav_text{
+     font-size: 20px;
+ }
