@@ -1,0 +1,17 @@
+.navbar{
+    height: 60px;
+    z-index: 1 ;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+
+ }
+ .img_paddys{
+    border-radius: 50%;
+    height: 50px;
+    width: 100px;
+ }
+ .nav_text{
+     font-size: 20px;
+     color: black;
+ }

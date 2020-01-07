@@ -1,0 +1,51 @@
+.registration_container{
+    width: 60%;
+    margin: 187px;
+}
+
+.register_form{
+    box-shadow: 10px 10px 10px 10px #b9ab8c;
+    width: 800px;
+    height: 594px;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: -1;
+    margin-left: 138px;
+    padding: 64px;
+    position: absolute;
+    top: 164px;
+}
+.sign_title{
+    font-size: 2.75em;
+    margin-top: -20px;
+    margin-left: 216px;
+
+}
+.content{
+    font-size: 20px;
+    color: #9a7c27;
+    font-family: initial;
+}
+.contentc{
+    font-size: 20px;
+    color: #9a7c27;
+    font-family: initial;
+    margin-left: -72px;;
+}
+.button{
+    background-color: white;
+    color: #9a7c27;
+    width: 150px;
+    height: 50px;
+    box-shadow: 1px 1px grey;
+    font-size: 25px;
+}
+
+.content_field{
+    border: none;
+    border-bottom-style: solid;
+    mask-border-width: 2px;
+    border-color: #9a7c27 ;
+    height: 50px;
+   
+}

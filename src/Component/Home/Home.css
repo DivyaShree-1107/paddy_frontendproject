@@ -1,0 +1,32 @@
+.home_paddy_img{
+    width: 1442px;
+    height: 502px;
+}
+.grid_box{
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+.paddy_variety_title{
+    font-size: 3em;
+    font-style: normal;
+    color: #d69e4b;
+    margin-top: 40px;
+}
+.variety_title{
+    margin: 100px;
+}
+.paddy_variety_sub_titl{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ceffc1;
+    font-size: 20px;
+
+}
+table, th, td,tr{
+ border: 2px solid black ;
+ column-width: 1300px;
+ background-color: rgb(245, 237, 225);
+}
+.div_content{
+    margin: 133px;
+}
