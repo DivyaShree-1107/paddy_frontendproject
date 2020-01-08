@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@appbaseio/reactivesearch": "^3.2.2",
+=======
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "code-snippets": "^0.9.1",
     "font-awesome": "^4.7.0",
+<<<<<<< HEAD
     "nodemon": "^2.0.2",
+=======
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-code-snippet": "^0.6.13",
     "react-dom": "^16.12.0",
+<<<<<<< HEAD
     "react-read-more-less": "^0.1.6",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.0",
@@ -22,6 +29,12 @@
     "react-social-icons": "^4.1.0",
     "react-social-media-icons": "^1.1.0",
     "start": "^5.1.0"
+=======
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-social-icons": "^4.1.0",
+    "react-social-media-icons": "^1.1.0"
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
   },
   "scripts": {
     "start": "react-scripts start",

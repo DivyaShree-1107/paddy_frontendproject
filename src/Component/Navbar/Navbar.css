@@ -1,4 +1,5 @@
 .navbar{
+<<<<<<< HEAD
     height: 60px;
     z-index: -10 ;
     position: absolute;
@@ -19,4 +20,15 @@
  .nav_button{
      border: none;
      background-color: inherit;
+=======
+    height: 90px;
+ }
+ .img_paddys{
+    border-radius: 50%;
+    height: 20px;
+    width: 70px;
+ }
+ .nav_text{
+     font-size: 20px;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
  }

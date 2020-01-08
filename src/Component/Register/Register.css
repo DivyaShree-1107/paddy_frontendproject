@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     /* background-image: radial-gradient(circle, #f6d68d, #ffcea7, #ffcdc6, #ffd2df, #eedaea); */
 }
@@ -33,18 +34,49 @@ body{
 }
 .content{
     font-size: 20px;
+=======
+.registration_container{
+    width: 60%;
+    margin: 187px;
+}
+
+.register_form{
+   
+    box-shadow: 10px 10px 10px 10px #b9ab8c;
+    width: 800px;
+    height: 594px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-left: 346px;
+    padding: 40px;
+}
+.sign_title{
+    font-size: 4.75em;
+
+}
+.content{
+    font-size: 36px;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
     color: #9a7c27;
     font-family: initial;
 }
 .contentc{
+<<<<<<< HEAD
     font-size: 20px;
     color: #9a7c27;
     font-family: initial;
     margin-left: -72px;;
+=======
+    font-size: 36px;
+    color: #9a7c27;
+    font-family: initial;
+    margin-left: -118px;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 }
 .button{
     background-color: white;
     color: #9a7c27;
+<<<<<<< HEAD
     width: 250px;
     height: 50px;
     box-shadow: 1px 1px grey;
@@ -74,10 +106,17 @@ body{
     top: 24px;
     border-radius: 20px;
     background-color: #e8dcba8c;
+=======
+    width: 150px;
+    height: 50px;
+    box-shadow: 1px 1px grey;
+    font-size: 25px;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 }
 
 .content_field{
     border: none;
+<<<<<<< HEAD
     border-bottom-style: groove;
     mask-border-width: 0.15px;
     border-color: #9a7c27 ;
@@ -86,4 +125,11 @@ body{
 }
 .errorMsg{
     color: red;
+=======
+    border-bottom-style: solid;
+    mask-border-width: 2px;
+    border-color: #9a7c27 ;
+    height: 50px;
+   
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 }

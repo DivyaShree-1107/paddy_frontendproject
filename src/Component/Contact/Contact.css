@@ -1,6 +1,7 @@
 .page{
     display: grid;
     grid-template-columns: 50% 50%;
+<<<<<<< HEAD
     padding: 19px;
 }
 .contact_us{
@@ -8,6 +9,15 @@
     width: 473px;
     height: 700px;
     padding-top: 11px;
+=======
+    padding: -20px;
+}
+.contact_us{
+    background-color: rgb(165, 158, 62);  
+    width: 750px;
+    height: 900px;
+      padding-top: 126px;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 
 }
 .heading{
@@ -27,10 +37,15 @@
     font-family: initial;
     /* font-stretch: extra-expanded; */
     font-style: oblique;
+<<<<<<< HEAD
     font-size: 17px;
     background-color: white;
     margin-left: -146px;
     margin-right: 320px;
+=======
+    font-size: 35px;
+    background-color: white;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 }
 .img_paddy{
     width:100px;
@@ -42,6 +57,7 @@
 }
 .infotitle{
     color: #a58f23;
+<<<<<<< HEAD
     font-size: 25px;
     font-family: inherit;
     margin-left: -158px;
@@ -50,6 +66,15 @@
 .page{
     padding: 75px;
     /* margin: 50px; */
+=======
+    font-size: 40px;
+    font-family: inherit; 
+   
+}
+.page{
+    padding: 50px;
+    margin: 50px;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 
 }
 .name{
@@ -58,6 +83,7 @@
     mask-border-width: 2px;
     color: black;
     width: 65%;
+<<<<<<< HEAD
     
 }
 .name1{
@@ -65,10 +91,21 @@
     padding-right: 35px;
     color: black;
     font-size: 25px;
+=======
+}
+.name1{
+    padding: 20px;
+    padding-right: 35px;
+    color: black;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 }
 .submitt{
     background-color: white;
     border: none;
+<<<<<<< HEAD
     color: rgb(173, 167, 77);
     font-size: 30px;
+=======
+    color: rgb(173, 167, 77);;
+>>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 }
