@@ -1,13 +1,13 @@
 .page{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: -20px;
+    padding: 19px;
 }
 .contact_us{
-    background-color: rgb(165, 158, 62);  
-    width: 750px;
-    height: 900px;
-      padding-top: 126px;
+    background-color: rgb(165, 158, 62);
+    width: 473px;
+    height: 700px;
+    padding-top: 11px;
 
 }
 .heading{
@@ -27,8 +27,10 @@
     font-family: initial;
     /* font-stretch: extra-expanded; */
     font-style: oblique;
-    font-size: 35px;
+    font-size: 17px;
     background-color: white;
+    margin-left: -146px;
+    margin-right: 320px;
 }
 .img_paddy{
     width:100px;
@@ -40,13 +42,14 @@
 }
 .infotitle{
     color: #a58f23;
-    font-size: 40px;
-    font-family: inherit; 
+    font-size: 25px;
+    font-family: inherit;
+    margin-left: -158px;
    
 }
 .page{
-    padding: 50px;
-    margin: 50px;
+    padding: 75px;
+    /* margin: 50px; */
 
 }
 .name{
@@ -55,14 +58,17 @@
     mask-border-width: 2px;
     color: black;
     width: 65%;
+    
 }
 .name1{
-    padding: 20px;
+    padding: 30px;
     padding-right: 35px;
     color: black;
+    font-size: 25px;
 }
 .submitt{
     background-color: white;
     border: none;
-    color: rgb(173, 167, 77);;
+    color: rgb(173, 167, 77);
+    font-size: 30px;
 }

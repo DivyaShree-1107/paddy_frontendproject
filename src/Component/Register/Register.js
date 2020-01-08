@@ -28,10 +28,12 @@ class Register extends Component {
     e.preventDefault();
     if (this.validateForm()) {
     let fields = {};
+    fields["firstname"] = "";
     fields["username"] = "";
     fields["emailid"] = "";
     fields["mobileno"] = "";
     fields["password"] = "";
+    fields["cpassword"] = "";
     this.setState({fields:fields});
     alert("Form submitted");
     }
@@ -75,7 +77,7 @@ class Register extends Component {
 
     if (typeof fields["emailid"] !== "undefined") {
     //regular expression for email validation
-    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    var pattern = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i);
     if (!pattern.test(fields["emailid"])) {
     formIsValid = false;
     errors["emailid"] = "*Please enter valid email-ID.";
@@ -106,17 +108,17 @@ class Register extends Component {
     }
     }
 
-    if (!fields["cpassword"]) {
-        formIsValid = false;
-        errors["cpassword"] = "*Please confirm password.";
-        }
+    // if (!fields["cpassword"]) {
+    //     formIsValid = false;
+    //     errors["cpassword"] = "*Please confirm password.";
+    //     }
     
-        if (typeof fields["cpassword"] !== "undefined") {
-        if (!fields["cpassword"]==!fields["password"] ){
-        formIsValid = false;
-        errors["cpassword"] = "*Password is not matching.";
-        }
-        }
+    //     if (typeof fields["cpassword"] !== "undefined") {
+    //     if (fields["cpassword"]!== fields["password"]){
+    //     formIsValid = false;
+    //     errors["cpassword"] = "*Password is not matching.";
+    //     }
+    //     }
 
     this.setState({
     errors: errors
@@ -127,29 +129,31 @@ class Register extends Component {
     }
     render() {
         return (
-            <div className="registration_container">
+            <div className="registration_container main_page_bck">
                 <h3 className="sign_title" >Signup page</h3>
                 <div className="register_form">
                     <form method="post" name="userRegistrationForm" onSubmit= {this.submituserRegistrationForm} >
-                        <label className="content">First Name</label>
+                        <label className="content">First Name  :</label>
                         <input className="content_field" type="text" name="firstname" value={this.state.fields.firstname} onChange={this.handleChange} />
                         <p className="errorMsg">{this.state.errors.firstname}</p>
-                        <label className="content">User Name</label>
+                        <label className="content">User Name  :</label>
                         <input className="content_field" type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
                         <p className="errorMsg">{this.state.errors.username}</p>
-                        <label className="content">Email ID:</label>
+                        <label className="content">Email ID  :</label>
                         <input className="content_field" type="text" name="emailid" value={this.state.fields.emailid} onChange={this.handleChange} />
                         <p className="errorMsg">{this.state.errors.emailid}</p>
-                        <label className="content">Mobile No:</label>
+                        <label className="content">Mobile No  :</label>
                         <input className="content_field" type="text" name="mobileno" value={this.state.fields.mobileno} onChange={this.handleChange} />
                         <p className="errorMsg">{this.state.errors.mobileno}</p>
-                        <label className="content">Password:</label>
+                        <label className="content">Password  :</label>
                         <input className="content_field" type="password" name="password" value={this.state.fields.password} onChange={this.handleChange} />
                         <p className="errorMsg">{this.state.errors.password}</p>
-                        <label className="contentc"> Confirm Password:</label>
+                        <label className="contentc"> Confirm Password :</label>
                         <input className="content_field" type="password" name="cpassword" value={this.state.fields.cpassword} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.password}</p>
+                        <p className="errorMsg">{this.state.errors.cpassword}</p>
                         <input  type="submit" className="button" value="Register"/>
+                        <div><span class="already_user">Already an user?</span><input type="submit" class="button_login" value="Login"/></div>>
+                        
                     </form>
                 </div>
             </div>

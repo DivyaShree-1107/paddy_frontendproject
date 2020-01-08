@@ -1,22 +1,15 @@
-.navbar{
+.logout{
     height: 60px;
     z-index: -10 ;
     position: absolute;
     background-image: radial-gradient(circle, #f6d68d, #ffcea7, #ffcdc6, #ffd2df, #eedaea);
     width: 100%;
-    box-shadow: 1px 1px pink;    
-
- }
- .img_paddys{
+    box-shadow: 2px 2px pink;
+    
+}
+.img_paddys{
     border-radius: 50%;
     height: 50px;
     width: 100px;
- }
- .nav_text{
-     font-size: 20px;
-     color: black;
- }
- .nav_button{
-     border: none;
-     background-color: inherit;
+    margin-left: -321px;
  }

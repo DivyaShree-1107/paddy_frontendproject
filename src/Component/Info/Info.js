@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import paddy from '../Home/hdimgpaddy.jpeg'
-import './Home.css';
+import paddy from '../Info/hdimgpaddy.jpeg'
+import './Info.css';
 import Navbar from '../Navbar/Navbar';
+import Logout from '../Logout/Logout';
 // import { Navbar } from 'react-bootstrap';
 
-class Home extends Component {
+class Info extends Component {
     constructor(){
         super()
         this.state={
@@ -20,28 +21,31 @@ class Home extends Component {
     }
     operationmedium(){
       this.setState({
-          showMe:!this.state.showMe1
+          showMe1:!this.state.showMe1
       })
   }
   operationlong(){
     this.setState({
-        showMe:!this.state.showMe2
+        showMe2:!this.state.showMe2
     })
 }
   render() {
     return (
           
-           <div >
-              <Navbar/>
+           <div>
+                         
+              <Logout/>
               <div>
                <img className="home_paddy_img " src={paddy} ></img>
               </div>
+              <Navbar/>
                 <div className="paddy_variety_title">Paddy Variety in Karnataka</div>
                 <div className="variety_title">
                 <button onClick={()=>this.operationshort()} className="paddy_variety_sub_titl">Short Duration</button>
                 <button onClick={()=>this.operationmedium()} className="paddy_variety_sub_titl">Medium Duration</button>
                 <button onClick={()=>this.operationlong()} className="paddy_variety_sub_titl">Long Duration</button>
                 </div>
+                {/* <Navbar/> */}
                
                 {
                 this.state.showMe?
@@ -214,4 +218,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Info;
