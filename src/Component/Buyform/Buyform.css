@@ -1,0 +1,25 @@
+.buy_form_grid{
+    display: grid;
+    grid-template-columns: 350px 450px;
+    
+}
+.main_page_buy{
+    padding-left: 525px;
+    padding-top: 166px;
+    padding-bottom: 70px;
+    background: linear-gradient(to top right, #ffffff 46%, #ccccff 99%);
+}
+.buy_form_title{
+    margin-left: 178px;
+    margin-bottom: 30px;
+    background-color: #efcfef;
+}
+.content_buy{
+
+    font-size: 20px;
+}
+.title_bg{
+    background-color: #efcfef;
+    width: 605px;
+    height: 80px;
+}

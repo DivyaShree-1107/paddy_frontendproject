@@ -1,8 +1,13 @@
 .footer{
-    background-color: #84c384;
-    height: 130px;
+    background-image: radial-gradient(circle, #f6d68d, #ffcea7, #ffcdc6, #ffd2df, #eedaea);
+    height: 125px;
     color: white;
+    width: 100%;
 }
 .icons:hover{
    background-color: white;
+}
+
+fl-page-header-content .fl-social-icons {
+    margin-right: 20px !important;
 }

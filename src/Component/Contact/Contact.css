@@ -1,27 +1,18 @@
 .page{
     display: grid;
     grid-template-columns: 50% 50%;
-<<<<<<< HEAD
     padding: 19px;
 }
 .contact_us{
     background-color: rgb(165, 158, 62);
-    width: 473px;
-    height: 700px;
-    padding-top: 11px;
-=======
-    padding: -20px;
-}
-.contact_us{
-    background-color: rgb(165, 158, 62);  
-    width: 750px;
-    height: 900px;
-      padding-top: 126px;
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
+    height: 400px;
+    width: 300px;
 
 }
 .heading{
-    padding-top: 164px;
+    padding-top: 118px;
+    padding-left: 26px;
+    font-size: 21px;
  
 }
 .space{
@@ -33,48 +24,33 @@
     text-align: left;
 }
 .info{
-    color:white;
+    color: white;
     font-family: initial;
-    /* font-stretch: extra-expanded; */
+    margin-top: 15px;
     font-style: oblique;
-<<<<<<< HEAD
-    font-size: 17px;
+    font-size: 14px;
     background-color: white;
-    margin-left: -146px;
-    margin-right: 320px;
-=======
-    font-size: 35px;
-    background-color: white;
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
+    margin-left: -215px;
+    margin-right: 415px;
 }
 .img_paddy{
-    width:100px;
+    width: 88px;
     border-radius: 50%;
-    size: 80x;
     z-index: 2;
-    top: 139px;
+    top: 96px;
     position: relative;
+    left: 107px;
 }
 .infotitle{
     color: #a58f23;
-<<<<<<< HEAD
-    font-size: 25px;
+    font-size: 19px;
     font-family: inherit;
-    margin-left: -158px;
+    margin-left: -213px;
    
 }
 .page{
     padding: 75px;
     /* margin: 50px; */
-=======
-    font-size: 40px;
-    font-family: inherit; 
-   
-}
-.page{
-    padding: 50px;
-    margin: 50px;
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
 
 }
 .name{
@@ -83,29 +59,20 @@
     mask-border-width: 2px;
     color: black;
     width: 65%;
-<<<<<<< HEAD
     
 }
 .name1{
-    padding: 30px;
-    padding-right: 35px;
+    padding: 16px;
+    padding-right: 41px;
     color: black;
-    font-size: 25px;
-=======
-}
-.name1{
-    padding: 20px;
-    padding-right: 35px;
-    color: black;
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
+    font-size: 20px;
 }
 .submitt{
     background-color: white;
     border: none;
-<<<<<<< HEAD
     color: rgb(173, 167, 77);
-    font-size: 30px;
-=======
-    color: rgb(173, 167, 77);;
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
+    font-size: 22px;
+    z-index: -1;
+    position: absolute;
+    right: 710px;
 }

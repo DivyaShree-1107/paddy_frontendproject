@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import paddy from '../Info/hdimgpaddy.jpeg'
 import './Info.css';
 import Navbar from '../Navbar/Navbar';
-import Logout from '../Logout/Logout';
 // import { Navbar } from 'react-bootstrap';
 
 class Info extends Component {
@@ -34,11 +33,11 @@ class Info extends Component {
           
            <div>
                          
-              <Logout/>
+              <Navbar/>
               <div>
                <img className="home_paddy_img " src={paddy} ></img>
               </div>
-              <Navbar/>
+             
                 <div className="paddy_variety_title">Paddy Variety in Karnataka</div>
                 <div className="variety_title">
                 <button onClick={()=>this.operationshort()} className="paddy_variety_sub_titl">Short Duration</button>

@@ -1,3 +1,11 @@
 .slide-container{
     padding: 150px;
 }
+.cards_img{
+    width: 171px;
+        height: 50px;
+}
+.one_card{
+    width: 350px;
+    height: 350px;
+}

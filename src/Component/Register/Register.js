@@ -1,209 +1,157 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './Register.css';
-
+import browserHistory from '../../Component/utils/browserHistroy'
+import { signup } from '../userFunction';
 
 class Register extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-        fields: {},
-        errors: {}
-        }
+            Firstname: '',
+            Username: '',
+            email: '',
+            password: '',
+            Confirmpassword: '',
+            Mobnum: '',
+            ferr: '',
+            lerr: '',
+            uerr: '',
+            perr: '',
+            cperr: '',
+            phnerr: ''
+        };
+    }
+    onHandleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+    }
 
-    this.handleChange = this.handleChange.bind(this);
-    this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
+    onHandleClicks = (e) => {
+    browserHistory.push('/login');
+    }
 
-    };
+    onHandleClicksCancel = (e) => {
 
-    handleChange(e) {
-    let fields = this.state.fields;
-    fields[e.target.name] = e.target.value;
-    this.setState({
-    fields
-    });
+    browserHistory.push('/');
 
     }
 
-    submituserRegistrationForm(e) {
+
+    onHandleClick = (e) => {
+    debugger;
     e.preventDefault();
-    if (this.validateForm()) {
-    let fields = {};
-<<<<<<< HEAD
-    fields["firstname"] = "";
-=======
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
-    fields["username"] = "";
-    fields["emailid"] = "";
-    fields["mobileno"] = "";
-    fields["password"] = "";
-<<<<<<< HEAD
-    fields["cpassword"] = "";
-=======
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
-    this.setState({fields:fields});
-    alert("Form submitted");
-    }
+    const reqst = {
+    Firstname: this.state.Firstname,
+    Username: this.state.Username,
+    email: this.state.email,
+    password: this.state.password,
+    Confirmpassword: this.state.Confirmpassword,
+    Mobnum: this.state.Mobnum
 
     }
+    signup(reqst).then(res => {
 
-    validateForm() {
 
-    let fields = this.state.fields;
-    let errors = {};
-    let formIsValid = true;
-<<<<<<< HEAD
-    
-    if (!fields["firstname"]) {
-        formIsValid = false;
-        errors["firstname"] = "*Please enter your Name.";
-        }
-    
-        if (typeof fields["firstname"] !== "undefined") {
-        if (!fields["firstname"].match(/^[a-zA-Z ]*$/)) {
-        formIsValid = false;
-        errors["firstname"] = "*Please enter alphabet characters only.";
-        }
-        }
-=======
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
+    browserHistory.push('/login')
 
-    if (!fields["username"]) {
-    formIsValid = false;
-    errors["username"] = "*Please enter your username.";
-    }
 
-    if (typeof fields["username"] !== "undefined") {
-    if (!fields["username"].match(/^[a-zA-Z ]*$/)) {
-    formIsValid = false;
-    errors["username"] = "*Please enter alphabet characters only.";
-    }
-    }
+    })
 
-    if (!fields["emailid"]) {
-    formIsValid = false;
-    errors["emailid"] = "*Please enter your email-ID.";
-    }
-
-    if (typeof fields["emailid"] !== "undefined") {
-    //regular expression for email validation
-<<<<<<< HEAD
-    var pattern = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i);
-=======
-    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
-    if (!pattern.test(fields["emailid"])) {
-    formIsValid = false;
-    errors["emailid"] = "*Please enter valid email-ID.";
-    }
-    }
-
-    if (!fields["mobileno"]) {
-    formIsValid = false;
-    errors["mobileno"] = "*Please enter your mobile no.";
-    }
-
-    if (typeof fields["mobileno"] !== "undefined") {
-    if (!fields["mobileno"].match(/^[0-9]{10}$/)) {
-    formIsValid = false;
-    errors["mobileno"] = "*Please enter valid mobile no.";
-    }
-    }
-
-    if (!fields["password"]) {
-    formIsValid = false;
-    errors["password"] = "*Please enter your password.";
-    }
-
-    if (typeof fields["password"] !== "undefined") {
-    if (!fields["password"].match(/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&]).*$/)) {
-    formIsValid = false;
-    errors["password"] = "*Please enter secure and strong password.";
-    }
-    }
-
-<<<<<<< HEAD
-    // if (!fields["cpassword"]) {
-    //     formIsValid = false;
-    //     errors["cpassword"] = "*Please confirm password.";
-    //     }
-    
-    //     if (typeof fields["cpassword"] !== "undefined") {
-    //     if (fields["cpassword"]!== fields["password"]){
-    //     formIsValid = false;
-    //     errors["cpassword"] = "*Password is not matching.";
-    //     }
-    //     }
-
-=======
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
+    if (this.state.Firstname.length === 0 && this.state.Username.length === 0 && this.state.email.length === 0 && this.state.password.length === 0 && this.state.Confirmpassword.length === 0 && this.state.Mobnum.length === 0) {
     this.setState({
-    errors: errors
-    });
-    return formIsValid;
+    ferr: "Firstname is required",
+    lerr: "Username is required",
+    uerr: "Email is required",
+    perr: "Password is required",
+    cperr: "ConrimPassword is required",
+    phnerr: "Phonumber is required"
 
-
+    })
     }
+    else if (this.state.Firstname.length === 0) {
+    this.setState({ ferr: "Firstname is required" })
+    }
+    else if (this.state.Username.length === 0) {
+    this.setState({ lerr: "username is required" })
+    }
+    else if (this.state.email.length === 0) {
+    this.setState({ uerr: "email is required" })
+    }
+    else if (this.state.password.length === 0) {
+    this.setState({ perr: "Password is required" })
+    }
+    else if (this.state.Confirmpassword.length === 0) {
+    this.setState({ Cperr: "Password is required" })
+    }
+    else if (this.state.Mobnum.length === 0) {
+    this.setState({ phnerr: "Password is required" })
+    }
+
+    else if (!this.state.Firstname.match(/^[A-Za-z]{5,15}$/)) {
+    this.setState({ ferr: "Please enter the valid fname" })
+    }
+    else if (!this.state.Username.match(/^[A-Za-z]{5,15}$/)) {
+    this.setState({ lerr: "Please enter the valid lname" })
+    }
+    else if (!this.state.email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]$/)) {
+    this.setState({ uerr: "Please enter the valid email" })
+    }
+    else if (!this.state.password.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
+    this.setState({ perr: "Please enter the valid password" })
+    }
+    else if (!this.state.Confirmpassword.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
+    this.setState({ cperr: "Please enter the valid password" })
+    }
+    else if (!this.state.Mobnum.match(/^[0-9]{10}$/)) {
+    this.setState({ phnerr: "Please enter the valid number" })
+    }
+
+    else {
+    browserHistory.push('/login')
+    // this.Loginaction.props.success("Register Successfully")
+    }
+    }
+
+
     render() {
-        return (
-<<<<<<< HEAD
-            <div className="registration_container main_page_bck">
-                <h3 className="sign_title" >Signup page</h3>
-                <div className="register_form">
-                    <form method="post" name="userRegistrationForm" onSubmit= {this.submituserRegistrationForm} >
-                        <label className="content">First Name  :</label>
-                        <input className="content_field" type="text" name="firstname" value={this.state.fields.firstname} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.firstname}</p>
-                        <label className="content">User Name  :</label>
-                        <input className="content_field" type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.username}</p>
-                        <label className="content">Email ID  :</label>
-                        <input className="content_field" type="text" name="emailid" value={this.state.fields.emailid} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.emailid}</p>
-                        <label className="content">Mobile No  :</label>
-                        <input className="content_field" type="text" name="mobileno" value={this.state.fields.mobileno} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.mobileno}</p>
-                        <label className="content">Password  :</label>
-                        <input className="content_field" type="password" name="password" value={this.state.fields.password} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.password}</p>
-                        <label className="contentc"> Confirm Password :</label>
-                        <input className="content_field" type="password" name="cpassword" value={this.state.fields.cpassword} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.cpassword}</p>
-                        <input  type="submit" className="button" value="Register"/>
-                        <div><span class="already_user">Already an user?</span><input type="submit" class="button_login" value="Login"/></div>>
-                        
-=======
-            <div className="registration_container">
-                <h3 className="sign_title" >Signup page</h3>
-                <div className="register_form">
-                    <form method="post" name="userRegistrationForm" onSubmit= {this.submituserRegistrationForm} >
-                        <label className="content">First Name</label>
-                        <input className="content_field" type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.username}</p>
-                        <label className="content">User Name</label>
-                        <input className="content_field" type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.username}</p>
-                        <label className="content">Email ID:</label>
-                        <input className="content_field" type="text" name="emailid" value={this.state.fields.emailid} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.emailid}</p>
-                        <label className="content">Mobile No:</label>
-                        <input className="content_field" type="text" name="mobileno" value={this.state.fields.mobileno} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.mobileno}</p>
-                        <label className="content">Password:</label>
-                        <input className="content_field" type="password" name="password" value={this.state.fields.password} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.password}</p>
-                        <label className="contentc"> Confirm Password:</label>
-                        <input className="content_field" type="password" name="password" value={this.state.fields.password} onChange={this.handleChange} />
-                        <p className="errorMsg">{this.state.errors.password}</p>
-                        <input  type="submit" className="button" value="Register"/>
->>>>>>> 94a6f0d40a44253a57d3c0b87442d642cdb5265b
-                    </form>
-                </div>
-            </div>
+    return (
+    <div className="register">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+    <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm">
+    <h1>Signup</h1>
 
-         );
-        }
+    <label><b>First Name</b></label><br />
+    <input type="text" name="Firstname" className="one" onChange={this.onHandleChange} /><br />
+    <p >{this.state.ferr}</p>
+    <label><b>UserName</b></label><br />
+    <input type="text" name="Username" className="one" onChange={this.onHandleChange} /><br />
+    <p >{this.state.lerr}</p>
 
-
+    <label ><b>Email</b></label><br />
+    <input type="text" name="email" className="one" onChange={this.onHandleChange} /><br />
+    <p >{this.state.uerr}</p>
+    <label ><b>Password</b></label><br />
+    <input type="password" name="password" className="one" onChange={this.onHandleChange} /><br /><br />
+    <p >{this.state.perr}</p>
+    <label ><b>Confirmpassword</b></label><br />
+    <input type="password" name="Confirmpassword" className="one" onChange={this.onHandleChange} /><br /><br />
+    <p >{this.state.cperr}</p>
+    <label ><b>Mobilenumber</b></label><br />
+    <input type="text" name="Mobnum" className="one" onChange={this.onHandleChange} /><br /><br />
+    <a href="" onClick={this.onHandleClicks}>you have already account</a>
+    <p >{this.state.phnerr}</p>
+    <button onClick={this.onHandleClick} className="btn1"><b>Register</b></button><a href="" onClick={this.onHandleClicksCancel}>Cancel</a>
+    </div>
+    <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+    </div>
+    </div>
+    </div>
+    </div>
+    );
     }
+    }
+
 
 export default Register;

@@ -21,12 +21,16 @@ class Footer extends Component {
                 |  mandyaagri@gmail.com
                 </div>  
               </div>                
-                  <div>
+                  <div className="row ">
+                  <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 " >
                     <span><a href="#"><SocialIcon className="icons" url="http://facebook.com/jaketrent" /></a></span>
                     <span><a href="#"><SocialIcon className="icons" url="http://instagram.com/jaketrent"/></a></span>
                     <span><a href="#"><SocialIcon className="icons" url="http://twitter.com/jaketrent" /></a></span>
                     <span><a href="#"><SocialIcon className="icons" url="http://linkedin.com/jaketrent" /></a></span>
-                    <span>@2020 DhaanyaDhare</span>
+                    </div>
+                    <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+                      <span>@2020 DhaanyaDhare</span>
+                    </div>
                   </div>          
             </footer>
         </div>
