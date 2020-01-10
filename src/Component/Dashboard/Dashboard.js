@@ -26,6 +26,7 @@ import Footer from '../Footer/Footer';
   },
 }
 
+
 class Dashboard extends Component {   
   render() {
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import './RegisterPage.css';
-import browserHistory from '../../Component/utils/browserHistroy'
+import BrowserHistory from '../utils/BrowserHistroy'
 import { signup } from '../userFunction';
 
 class Login extends Component {
@@ -27,12 +27,12 @@ this.setState({ [event.target.name]: event.target.value });
 }
 onHandleClicks = (e) => {
 
-browserHistory.push('/login');
+    BrowserHistory.push('/login');
 
 }
 onHandleClicksCancel = (e) => {
 
-browserHistory.push('/');
+    BrowserHistory.push('/');
 
 }
 
@@ -52,7 +52,7 @@ Mobnum: this.state.Mobnum
 signup(reqst).then(res => {
 if (res.data === "User Created Succesfully") {
 alert("UserCreated Successfully")
-browserHistory.push('/login')
+BrowserHistory.push('/login')
 }
 
 })
@@ -83,7 +83,7 @@ this.setState({ perr: "Please enter the valid password" })
 }
 
 else {
-browserHistory.push('/login')
+    BrowserHistory.push('/login')
 
 }
 }

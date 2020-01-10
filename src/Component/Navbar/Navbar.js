@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import paddy from './paddylogo.jpeg';
 import './Navbar.css';
-import browserHistroy from '../../Component/utils/browserHistroy'
+import BrowserHistroy from '../utils/BrowserHistroy'
 
 class Logout extends Component {
   Info(){
-    browserHistroy.push('/info');
+    BrowserHistroy.push('/info');
      }
   Login(){
-    browserHistroy.push('/login')
+    BrowserHistroy.push('/login')
   }
   Contact(){
-    browserHistroy.push('/contact');
+    BrowserHistroy.push('/contact');
   }
   Register(){
-    browserHistroy.push('/register');
+    BrowserHistroy.push('/register');
   }
   Buy(){
-    browserHistroy.push('/buy');
+    BrowserHistroy.push('/buy');
   }
   render() {
     return (
