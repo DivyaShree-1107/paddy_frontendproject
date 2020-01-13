@@ -12,8 +12,7 @@ import { Provider } from 'react-redux';
 
 import { createStore, applyMiddleware, compose } from 'redux';
 import Reducer from './Reducers/index';
-// import task2ReducerA from './Reducer/task2ReducerA';
-// import task2ReducerB from './Reducer/task2ReducerB';
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(Reducer, {}, composeEnhancers(applyMiddleware(ReduxThunk)));

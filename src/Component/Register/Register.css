@@ -7,12 +7,12 @@ padding-top: 30px;
 }
 .frm
 {
-padding-left: 10px;
+padding-left: 5px;
 }
 .btn1
 {
 height: 35px;
-background-color: blue;
+background-color: rgb(56, 99, 63);
 color: white;
 }
 a
@@ -24,6 +24,3 @@ margin-left: 15px;
 width: 75%;
 
 }
-/* p{
-color: red;
-} */

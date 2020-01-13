@@ -1,13 +1,30 @@
-.footer{
-    background-image: radial-gradient(circle, #f6d68d, #ffcea7, #ffcdc6, #ffd2df, #eedaea);
-    height: 125px;
-    color: white;
-    width: 100%;
+.container{
+  
+    height: 252px;
+    
 }
 .icons:hover{
    background-color: white;
 }
-
-fl-page-header-content .fl-social-icons {
-    margin-right: 20px !important;
+.paddy_logo{
+    width: 120px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 35px;
+ }
+.page-footer{
+    background-color: rgb(29, 29, 37);
+    color: white;
+    height: 270px;
+    font-size: 13px;
+    width: 100%;
+   
+}
+.list-inline-item{
+    width: 45px;
+}
+.cpy_right{
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 195px;
 }

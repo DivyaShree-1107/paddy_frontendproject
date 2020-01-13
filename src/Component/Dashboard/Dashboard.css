@@ -1,11 +1,129 @@
 .slide-container{
-    padding: 150px;
+    padding: 70px;
 }
 .cards_img{
-    width: 171px;
-        height: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
-.one_card{
-    width: 350px;
-    height: 350px;
+.card{
+  display: inline-block;
+  width: 56%;
+  height: 389px;
+}
+
+
+.para_body{
+  height: 349px;
+}
+.content_para{
+  height: 244px;
+}
+.img_title{
+    font-size: 3.75rem;
+    text-align: center;
+    color: #6d6d71;
+    padding-bottom: 20px;
+}
+
+
+.carousel-item > img {
+  -webkit-animation: zoom 20s;
+  animation: ease-in 20s;
+}
+
+.container_para{
+  height: 420px;
+}
+
+.container{
+  max-width: 100px;
+  margin-top: -23px;
+  text-align: left;
+}
+ .sticky {
+    position: relative;
+    top: 10px;
+  }
+  /* .content {
+    height: 1000px;
+  } */
+  .menu {
+    background-color: rgb(245, 219, 219);
+    color: #191818;
+    height: 192px;
+    font-size: 14px;
+  }
+  .related {
+    background-color: grey;
+    height: 34px;
+    font-size: 20px;
+  }
+  
+  .tall {
+    height: 100vh;
+  }
+  .para_body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -11px;
+    margin-left: -15px;
+    margin-top: 37px;
+
+  }
+  .head_dash{
+    font-size: 3rem;
+  }
+  .para_dash{
+    margin-top: 32px;
+    font-size: 26px;
+    color: black;
+  }
+
+
+
+.dates{
+    color: rgb(109, 70, 96);
+}
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: content-box;
+    margin-top: 0;
+    margin-bottom: 46px;
+    animation: marquee 60s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+
+/* Make it pretty */
+.microsoft {
+    padding-left: 1.5em;
+    position: relative;
+    font: 16px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+.microsoft:before, .microsoft::before {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: -1em; left: -1em;
+    width: .5em; height: .5em;
+    
+}
+
+.microsoft:after, .microsoft::after {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 2em; height: 2em;
+    background-image: linear-gradient(90deg, white 70%, rgba(255,255,255,0));
 }

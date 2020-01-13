@@ -20,18 +20,21 @@ export function ErrorFunc(ActionType, error) {
     }
 }
 
-export function registerHandle(userdata) {
+export function loginHandle(userdata) {
     debugger
     return dispatch => {
         dispatch(BeginFunc(ActionTypes.ADD_SIGNUP_BEGIN));
-        HttpWrapper('POST', '/Signup', false, userdata)
+        HttpWrapper('POST', '/Signin', false, userdata)
     
             .then(response => {
-                dispatch(SuccessFunc(ActionTypes.ADD_SIGNUP_SUCCESS, response.data));
-                BrowserHistory.push('/');
+                sessionStorage.setItem('authentication', response.data.token)
+            sessionStorage.setItem('userEmail', response.data.email)
+            
+                dispatch(SuccessFunc(ActionTypes.ADD_LOGIN_SUCCESS, response.data));
+                BrowserHistory.push('/dashboard');
             })
             .catch(error => {
-                dispatch(ErrorFunc(ActionTypes.ADD_SIGNUP_FAILURE, error));
+                dispatch(ErrorFunc(ActionTypes.ADD_LOGIN_FAILURE, error));
             });
     };
 }
