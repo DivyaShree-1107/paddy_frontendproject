@@ -1,3 +1,61 @@
-.container_login{
+#login_container{
     width: 100%;
+    font-size: 26px;
+    height: 629px;
+}
+.loginimg{
+    width: 1014px;
+    height: 700px;
+}
+#LoginTitle{
+    font-size: 50px;
+}
+#login_subtle{
+    font-size: 25px;
+    padding-top: 35px;
+}
+.frm_login{
+    padding-left: 153px;
+    padding-right: 202px;
+    background-color: rgba(189, 179, 139, 0.31);
+    height: 700px;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+.login{
+    /* background-color: rgb(131, 88, 88); */
+    padding-top: 30px;
+    width: 100%;
+    height: 1000px;
+}
+.one_login{
+    width: 60%;
+    height: 36px;
+    font-size: 25px;
+}
+.one_login_p{
+    width: 60%;
+    height: 36px;
+    font-size: 25px;
+    margin-left: 42px;
+}
+.btn1_login{
+    height: 43px;
+    width: 130px;
+    background-color: #5a3f52d1;
+    color: white;
+    font-size: 23px;
+    padding-left: 25px;
+}
+.btn2_login{
+    font-size: 20px;
+}
+.btn3_login{
+    height: 43px;
+    width: 130px;
+    background-color: #5a3f52d1;
+    color: white;
+    font-size: 23px;
+    margin-left: 50px;
 }

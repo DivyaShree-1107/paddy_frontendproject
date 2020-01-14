@@ -27,8 +27,16 @@ export function registerHandle(userdata) {
         HttpWrapper('POST', '/Signup', false, userdata)
     
             .then(response => {
+                //  if(!response.data.Admin)
+                // {
+                //     BrowserHistory.push('/dashboarduser')
+                // }
+                // else{
+                //    BrowserHistory.push('/dashboard');
+
+                // }
                 dispatch(SuccessFunc(ActionTypes.ADD_SIGNUP_SUCCESS, response.data));
-                BrowserHistory.push('/');
+                BrowserHistory.push('/login');
             })
             .catch(error => {
                 dispatch(ErrorFunc(ActionTypes.ADD_SIGNUP_FAILURE, error));

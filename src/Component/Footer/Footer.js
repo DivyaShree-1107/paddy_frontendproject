@@ -12,9 +12,9 @@ class Footer extends Component {
       <div >
         <footer class="page-footer">
 
-          <div class="container text-center text-md-left">
+         
 
-            <div class="row text-center  ">
+            <div class="row ">
 
 
               <div class="col-md-3 col-lg-3 col-xl-3 ">
@@ -29,8 +29,6 @@ class Footer extends Component {
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
 
               </div>
-
-
               <hr class="w-100 clearfix d-md-none" />
 
 
@@ -111,7 +109,6 @@ class Footer extends Component {
 
 
 
-            </div>
 
 
 

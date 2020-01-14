@@ -27,11 +27,19 @@ export function loginHandle(userdata) {
         HttpWrapper('POST', '/Signin', false, userdata)
     
             .then(response => {
+                debugger
                 sessionStorage.setItem('authentication', response.data.token)
             sessionStorage.setItem('userEmail', response.data.email)
-            
-                dispatch(SuccessFunc(ActionTypes.ADD_LOGIN_SUCCESS, response.data));
-                BrowserHistory.push('/dashboard');
+                if(!response.data.Admin)
+                {
+                    BrowserHistory.push('/dashboarduser')
+                }
+                else{
+                   BrowserHistory.push('/dashboard');
+
+                }
+                // dispatch(SuccessFunc(ActionTypes.ADD_LOGIN_SUCCESS, response.data));
+                // BrowserHistory.push('/dashboard');
             })
             .catch(error => {
                 dispatch(ErrorFunc(ActionTypes.ADD_LOGIN_FAILURE, error));

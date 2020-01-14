@@ -1,26 +1,109 @@
-.register
-{
-background-color: gainsboro;
-
-padding-top: 30px;
-
-}
-.frm
-{
-padding-left: 5px;
-}
-.btn1
-{
-height: 35px;
-background-color: rgb(56, 99, 63);
-color: white;
-}
-a
-{
-margin-left: 15px;
-}
-.one
-{
-width: 75%;
+.reg_body{
+    padding-top: 50px;
+    padding-right: 921px;
+    /* width: 100%; */
+    justify-content: left;
+    background: linear-gradient(to top, #99ff99 0%, #ffffff 88%);
+    padding-bottom: 114px;
+ 
+border:solid 1px cornsilk;
+background-position: center;
+background-size: cover;
+height: 1000px;
+width: 2899px;
+/* padding: 0;
+margin-top: 70px; */
 
 }
+.regcont{
+    text-align: left;
+
+}
+.regimg{
+    width: 850px;
+    height: 950px;
+    padding-left: 15px;
+}
+.register_container{
+    max-width: 1083px;
+    margin-top: 109px;
+    text-align: center;
+    background: url('./bg1.jpeg') no-repeat;
+}
+.frm_reg{
+    padding-left: 250px;
+}
+.card-title{
+    margin-right: 250px;
+    font-size: 40px;
+}
+.card_body{
+    background-color: lightpink;
+    width: 697px;
+    margin-top: 50px;
+    padding-top: 80px;
+}
+.register_fields_1{
+    font-size: 22px;
+    padding-top: 15px;
+}
+.register_fields_2{
+    font-size: 22px;
+    padding-top: 15px;
+    margin-right: 50px;
+}
+.register_fields_3{
+    font-size: 22px;
+    padding-top: 15px;
+    margin-right: 7px;
+}
+.register_fields_4{
+    font-size: 22px;
+    padding-top: 15px;
+    margin-left: -82px;
+}
+.register_fields_5{
+    font-size: 22px;
+    padding-top: 15px;
+    margin-left: -44px;
+}
+.one_input{
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+}
+.btn1_reg{
+    width: 220px;
+    height: 53px;
+    font-size: 25px;
+    color: white;
+    background-color: #425bd8;
+    margin-top: 26px;
+
+    margin-right: 152px;
+}
+.btn2_reg{
+    width: 220px;
+    height: 53px;
+    font-size: 25px;
+    color: white;
+    background-color: #425bd8;
+    margin-top: 26px;
+    margin-right: 248px;    
+
+}
+.already{
+    
+    font-size: 20px;
+    color: #28687d;
+    margin-left: -137px;
+}
+.cancel_reg{
+    font-size: 25px;
+    margin-left: -150px;
+    color: #28687d;
+   }
+   .error_reg{
+       color: red;
+       font-size: 25px;
+   }

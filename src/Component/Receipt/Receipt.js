@@ -4,12 +4,8 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { buyHandle } from '../../Actions/BuyActions';
-import Footer from '../Footer/Footer';
-import Navbar from '../Navbar/Navbar';
-import BrowserHistory from '../utils/BrowserHistroy'
-import { buyform } from '../userFunctions';
 import axios from 'axios';
-import { ListItem } from 'react-bootstrap/lib/Media';
+
 
 
 

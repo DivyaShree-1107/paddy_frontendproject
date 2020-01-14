@@ -1,0 +1,37 @@
+.navbar{
+    
+    background-color: rgb(29, 29, 37);
+      width: 100%;
+   }
+   .comp_name{
+      font-size: 23px;
+   }
+   .nav_text{
+       font-size: 20px;
+       color: white;
+   }
+   .nav_button{
+       border: none;
+       background-color: inherit;
+       color:white
+   }
+   .img_paddys{
+      border-radius: 50%;
+      height: 50px;
+      width: 100px;
+      margin-left: -321px;
+   }
+   .nav_title{
+     font-size: 30px;
+     font-family: cursive;
+     /* margin-left: -22px; */
+     color: white;
+     margin-left: -9px;
+   }
+   .paddy_logo{
+      width: 120px;
+      height: 60px;
+      border-radius: 50%;
+      margin-left: 35px;
+   }
+   

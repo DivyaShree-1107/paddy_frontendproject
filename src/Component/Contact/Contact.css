@@ -5,8 +5,10 @@
 }
 .contact_us{
     background-color: rgb(165, 158, 62);
-    height: 400px;
-    width: 300px;
+    height: 600px;
+    width: 569px;
+    margin-left: 251px;
+    margin-left: 51px;
 
 }
 .heading{
@@ -19,16 +21,17 @@
     background-color: white;
 }
 .contactinfo{
-    background-color:white;
-    padding-left: 13px;
+    background-color: white;
+    padding-left: 314px;
     text-align: left;
+    padding-top: 12px;
 }
 .info{
     color: white;
     font-family: initial;
-    margin-top: 15px;
+    margin-top: -16px;
     font-style: oblique;
-    font-size: 14px;
+    font-size: 26px;
     background-color: white;
     margin-left: -215px;
     margin-right: 415px;
@@ -39,13 +42,13 @@
     z-index: 2;
     top: 96px;
     position: relative;
-    left: 107px;
+    left: 15px;
 }
 .infotitle{
     color: #a58f23;
-    font-size: 19px;
+    font-size: 28px;
     font-family: inherit;
-    margin-left: -213px;
+    margin-left: -273px;
    
 }
 .page{

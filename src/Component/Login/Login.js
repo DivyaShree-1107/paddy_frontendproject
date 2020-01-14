@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import './RegisterPage.css';
+import './Login.css';
+import loginimg from './login1.jpeg';
+
 import BrowserHistory from '../utils/BrowserHistroy'
-import { signin } from '../userFunctions1';
+import paddy from '../Navbar/paddylogo.jpeg';
 
 import { withRouter } from 'react-router-dom'
 import { loginHandle } from '../../Actions/LoginActions';
@@ -31,9 +33,13 @@ class Login extends Component {
         BrowserHistory.push('/login');
 
     }
+    onHandleClickRegister=(e) => {
+        BrowserHistory.push('/register');
+
+    }
     onHandleClicksCancel = (e) => {
 
-        BrowserHistory.push('/');
+        BrowserHistory.push('/login');
 
     }
 
@@ -46,33 +52,35 @@ class Login extends Component {
             Mobnum: this.state.Mobnum
 
         }
-      
-
-        
+              
         this.props.loginHandle(payload);
     }
 
 
     render() {
         return (
-            <div className="register">
-                <div class=" ">
+            <div className="login">
+                <div class="login_container">
                     <div class="row">
-                        <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                        <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm">
-                            <h1>Login</h1>
+                        <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+                        <img className='loginimg' src={loginimg} ></img>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 frm_login">
+                        <img className='paddy_logo' src={paddy} ></img><br/><br/>
+                            <span id="LoginTitle">Login</span><br/>
 
 
-                            <label ><b>Mob Num</b></label><br />
-                            <input type="text" name="Mobnum" className="one" onChange={this.onHandleChange} /><br />
+                            <label id="login_subtle" >Mob Number</label>
+                            <input type="text" name="Mobnum" className="one_login" onChange={this.onHandleChange} /><br />
                             <p >{this.state.uerr}</p>
-                            <label ><b>Password</b></label><br />
-                            <input type="password" name="password" className="one" onChange={this.onHandleChange} /><br /><br />
+                            <label id="login_subtle"  >Password</label>
+                            <input type="password" name="password" className="one_login_p" onChange={this.onHandleChange} /><br /><br />
                             <p >{this.state.perr}</p>
 
-                            <button onClick={this.onHandleClick} className="btn1"><b>Login</b></button><a href="" onClick={this.onHandleClicksCancel}>Cancel</a>
-                        </div>
-                        <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                            <button onClick={this.onHandleClick} className="btn1_login"><b>Login</b></button>
+                            <button onClick={this.onHandleClickRegister} className="btn3_login"><b>Register</b></button>
+                            <br/>
+                            <a className="btn2_login" href="#" onClick={this.onHandleClicksCancel}>Cancel</a>
                         </div>
                     </div>
                 </div>

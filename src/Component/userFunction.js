@@ -9,7 +9,8 @@ Username: regUser.Username,
 password: regUser.password,
 Confirmpassword: regUser.Confirmpassword,
 email: regUser.email,
-Mobnum: regUser.Mobnum
+Mobnum: regUser.Mobnum,
+Admin:regUser.Admin
 })
 .then(res => {
 console.log(res)

@@ -8,10 +8,16 @@ class Info extends Component {
   constructor() {
     super()
     this.state = {
+      showMe0: false,
       showMe: false,
       showMe1: false,
       showMe2: false
     }
+  }
+  showContentTitle(){
+    this.setState({
+      showMe0: !this.state.showMe0
+    })
   }
   operationshort() {
     this.setState({
@@ -35,16 +41,20 @@ class Info extends Component {
 
         <Navbar />
         <div>
-          <img className="home_paddy_img " src={paddy} ></img>
+          <img onClick={()=> this.showContentTitle()} className="home_paddy_img " src={paddy} ></img>
         </div>
 
-        <div className="paddy_variety_title">Paddy Variety in Karnataka</div>
+        {
+          this.state.showMe0 ?
         <div className="variety_title">
-          <button onClick={() => this.operationshort()} className="paddy_variety_sub_titl">Short Duration</button>
-          <button onClick={() => this.operationmedium()} className="paddy_variety_sub_titl">Medium Duration</button>
-          <button onClick={() => this.operationlong()} className="paddy_variety_sub_titl">Long Duration</button>
+          <button onClick={() => this.operationshort()} className="paddy_variety_sub_titl">Short Duration Crop</button>
+          <button onClick={() => this.operationmedium()} className="paddy_variety_sub_titl">Medium Duration Crop</button>
+          <button onClick={() => this.operationlong()} className="paddy_variety_sub_titl">Long Duration Crop</button>
         </div>
-        {/* <Navbar/> */}
+        : null
+      }
+
+        
 
         {
           this.state.showMe ?

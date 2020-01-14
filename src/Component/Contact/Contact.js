@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Contact.css';
+import './Contact.css'
 import paddy from '../Navbar/paddylogo.jpeg';
 import Navbar from '../Navbar/Navbar';
 
@@ -14,8 +14,6 @@ class Contact extends Component {
       <div>
         <Navbar />
         <div className="page">
-
-
           <div className="contact_us">
             <img className='img_paddy' src={paddy} ></img>
             <h1 className="heading">Contact us to sell crop</h1>

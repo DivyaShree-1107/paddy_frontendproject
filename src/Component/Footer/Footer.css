@@ -1,8 +1,6 @@
-.container{
-  
-    height: 252px;
-    
-}
+/* .foot_body{
+
+} */
 .icons:hover{
    background-color: white;
 }
@@ -15,8 +13,8 @@
 .page-footer{
     background-color: rgb(29, 29, 37);
     color: white;
-    height: 270px;
-    font-size: 13px;
+    height: 320px;
+    font-size: 22px;
     width: 100%;
    
 }

@@ -1,5 +1,5 @@
 .home_paddy_img{
-    width: 1442px;
+    width: 1842px;
     height: 502px;
 }
 .grid_box{
@@ -26,7 +26,11 @@ table, th, td,tr{
  border: 2px solid black ;
  column-width: 1300px;
  background-color: rgb(245, 237, 225);
+ font-size: 25px;
 }
 .div_content{
     margin: 133px;
+}
+.table_content{
+    font-size: 25px;
 }

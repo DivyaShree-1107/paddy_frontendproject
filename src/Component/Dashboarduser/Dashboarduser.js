@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import paddy from '../Dashboard/paddy01.jpeg'
-import paddy1 from '../Dashboard/paddy02.jpeg'
-import paddy2 from '../Dashboard/paddy03.jpeg'
-import paddy3 from '../Dashboard/paddy04.jpeg'
-import gowri from '../Dashboard/gowrisanna.jpeg'
-import sona from '../Dashboard/sonamasori.jpeg'
-import jolaga from '../Dashboard/jolaga.jpeg'
-import salem from '../Dashboard/salemsanna.jpeg'
-import kolam from '../Dashboard/rajkamal.jpeg'
-import black_rice from '../Dashboard/karijaddu.jpeg'
-import "./Dashboard.css"
+import paddy from '../Dashboarduser/paddy01.jpeg'
+import paddy1 from '../Dashboarduser/paddy02.jpeg'
+import paddy2 from '../Dashboarduser/paddy03.jpeg'
+import paddy3 from '../Dashboarduser/paddy04.jpeg'
+import gowri from '../Dashboarduser/gowrisanna.jpeg'
+import sona from '../Dashboarduser/sonamasori.jpeg'
+import jolaga from '../Dashboarduser/jolaga.jpeg'
+import salem from '../Dashboarduser/salemsanna.jpeg'
+import kolam from '../Dashboarduser/rajkamal.jpeg'
+import black_rice from '../Dashboarduser/karijaddu.jpeg'
+import "./Dashboarduser.css"
 
 import { Fade } from 'react-slideshow-image';
-import Navbar from '../Navbar/Navbar';
+import Navbaruser from '../Navbaruser/Navbaruser';
 import Footer from '../Footer/Footer';
 
 
@@ -28,12 +28,12 @@ const fadeProperties = {
 }
 
 
-class Dashboard extends Component {
+class Dashboarduser extends Component {
   render() {
     return (
 
       <div >
-        <Navbar/>
+        <Navbaruser/>
         <div className="slide-container">
           <Fade  {...fadeProperties}>
             <div className="each-fade">
@@ -174,9 +174,8 @@ class Dashboard extends Component {
           </div>
       </div>
         
-       
-        </div>
         <Footer />
+        </div>
       </div>
     )
   }
@@ -185,4 +184,4 @@ class Dashboard extends Component {
 }
 
 
-export default Dashboard;
+export default Dashboarduser;
