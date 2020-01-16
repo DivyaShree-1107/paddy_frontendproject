@@ -2,14 +2,31 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Login.css';
 import loginimg from './login1.jpeg';
+import paddy from '../Dashboard/paddy01.jpeg'
+import paddy1 from '../Dashboard/paddy02.jpeg'
+import paddy2 from '../Dashboard/paddy03.jpeg'
+import paddy3 from '../Dashboard/paddy04.jpeg'
 
 import BrowserHistory from '../utils/BrowserHistroy'
-import paddy from '../Navbar/paddylogo.jpeg';
+import paddylo from '../Navbar/paddylogo.jpeg';
+import { Fade } from 'react-slideshow-image';
+
 
 import { withRouter } from 'react-router-dom'
 import { loginHandle } from '../../Actions/LoginActions';
 // import { signup } from '../userFunction';
 import axios from 'axios'
+
+
+const fadeProperties = {
+    duration: 2000,
+    transitionDuration: 200,
+    infinite: true,
+    indicators: true,
+    onChange: (oldIndex, newIndex) => {
+      console.log(`fade transition from ${oldIndex} to ${newIndex}`);
+    },
+  }
 
 class Login extends Component {
     constructor(props) {
@@ -33,7 +50,7 @@ class Login extends Component {
         BrowserHistory.push('/login');
 
     }
-    onHandleClickRegister=(e) => {
+    onHandleClickRegister = (e) => {
         BrowserHistory.push('/register');
 
     }
@@ -52,7 +69,7 @@ class Login extends Component {
             Mobnum: this.state.Mobnum
 
         }
-              
+
         this.props.loginHandle(payload);
     }
 
@@ -63,11 +80,11 @@ class Login extends Component {
                 <div class="login_container">
                     <div class="row">
                         <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-                        <img className='loginimg' src={loginimg} ></img>
+                            <img className='loginimg' src={loginimg} ></img>
                         </div>
                         <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 frm_login">
-                        <img className='paddy_logo' src={paddy} ></img><br/><br/>
-                            <span id="LoginTitle">Login</span><br/>
+                            <img className='paddy_logo' src={paddylo} ></img><br /><br />
+                            <span id="LoginTitle">Login</span><br />
 
 
                             <label id="login_subtle" >Mob Number</label>
@@ -79,11 +96,39 @@ class Login extends Component {
 
                             <button onClick={this.onHandleClick} className="btn1_login"><b>Login</b></button>
                             <button onClick={this.onHandleClickRegister} className="btn3_login"><b>Register</b></button>
-                            <br/>
+                            <br />
                             <a className="btn2_login" href="#" onClick={this.onHandleClicksCancel}>Cancel</a>
                         </div>
                     </div>
                 </div>
+                {/* <div className="slide-container">
+                    <Fade  {...fadeProperties}>
+                        <div className="each-fade">
+                            <div className="image-container">
+                                <img className="home_paddy_img" src={paddy} />
+                            </div>
+                            <h2>If you give me rice, I'll eat today; if you teach me how to grow rice, I'll eat every day.</h2>
+                        </div>
+                        <div className="each-fade">
+                            <div className="image-container">
+                                <img className="home_paddy_img" src={paddy1} />
+                            </div>
+                            <h2>Rice is the best, the most nutritive and unquestionably the most widespread staple in the world.</h2>
+                        </div>
+                        <div className="each-fade">
+                            <div className="image-container">
+                                <img className="home_paddy_img" src={paddy2} />
+                            </div>
+                            <h2>Never break another man's rice bowl.</h2>
+                        </div>
+                        <div className="each-fade">
+                            <div className="image-container">
+                                <img className="home_paddy_img" src={paddy3} />
+                            </div>
+                            <h2>Peace is achieved with rice and salt, not with katanas and arrows</h2>
+                        </div>
+                    </Fade>
+                </div> */}
             </div>
         );
     }

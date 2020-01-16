@@ -33,7 +33,7 @@ class Dashboard extends Component {
     return (
 
       <div >
-        <Navbar/>
+        <Navbar />
         <div className="slide-container">
           <Fade  {...fadeProperties}>
             <div className="each-fade">
@@ -96,85 +96,85 @@ class Dashboard extends Component {
 
         </div>
 
-<div>
+        <div>
 
-        <h3 className="img_title">Famous Paddy Varieties</h3>
-        <div class="card-columns">
-          <div class=" one_card">
-            <div class="card" >
-              <img class="card-img-top" src={gowri} />
-              <div class="card-body">
-                <h4 class="card-title">Gowri Sanna</h4>
-                <p class="card-text">70 INR</p>
-                <p class="card-text">Karnataka</p>
-                <a href="https://en.wikipedia.org/wiki/Gowri_sanna" class="btn btn-primary">Know more</a>
+          <h3 className="img_title">Famous Paddy Varieties</h3>
+          <div class="card-columns">
+            <div class=" one_card">
+              <div class="card" >
+                <img class="card-img-top" src={gowri} />
+                <div class="card-body">
+                  <h4 class="card-title">Gowri Sanna</h4>
+                  <p class="card-text">70 INR</p>
+                  <p class="card-text">Karnataka</p>
+                  <a href="https://en.wikipedia.org/wiki/Gowri_sanna" class="btn btn-primary">Know more</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class=" one_card">
-            <div class="card" >
-              <img class="card-img-top" src={jolaga} />
-              <div class="card-body">
-                <h4 class="card-title">Jolaga</h4>
-                <p class="card-text">65 INR</p>
-                <p class="card-text">Malnad</p>
-                <a href="https://en.wikipedia.org/wiki/Jolaga" class="btn btn-primary">Know more</a>
+            <div class=" one_card">
+              <div class="card" >
+                <img class="card-img-top" src={jolaga} />
+                <div class="card-body">
+                  <h4 class="card-title">Jolaga</h4>
+                  <p class="card-text">65 INR</p>
+                  <p class="card-text">Malnad</p>
+                  <a href="https://en.wikipedia.org/wiki/Jolaga" class="btn btn-primary">Know more</a>
+                </div>
               </div>
             </div>
+            <div class=" one_card">
+              <div class="card" >
+                <img class="card-img-top" src={salem} />
+                <div class="card-body">
+                  <h4 class="card-title">Salem Sanna</h4>
+                  <p class="card-text">45 INR</p>
+                  <p class="card-text">Tamil Nadu</p>
+                  <a href="https://en.wikipedia.org/wiki/Salem_sanna" class="btn btn-primary">Know more</a>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class=" one_card">
-            <div class="card" >
-              <img class="card-img-top" src={salem} />
-              <div class="card-body">
-                <h4 class="card-title">Salem Sanna</h4>
-                <p class="card-text">45 INR</p>
-                <p class="card-text">Tamil Nadu</p>
-                <a href="https://en.wikipedia.org/wiki/Salem_sanna" class="btn btn-primary">Know more</a>
+
+
+          {/* second line// */}
+          <div class="card-columns">
+            <div class=" one_card">
+              <div class="card" >
+                <img class="card-img-top" src={sona} />
+                <div class="card-body">
+                  <h4 class="card-title">Sona Masoori</h4>
+                  <p class="card-text">50 INR</p>
+                  <p class="card-text">Karnataka, Andra Pradesh</p>
+                  <a href="https://en.wikipedia.org/wiki/Sona_Masuri" class="btn btn-primary">Know more</a>
+                </div>
+              </div>
+            </div>
+            <div class=" one_card">
+              <div class="card" >
+                <img class="card-img-top" src={kolam} />
+                <div class="card-body">
+                  <h4 class="card-title">Kolam</h4>
+                  <p class="card-text">50 INR</p>
+                  <p class="card-text">Woda Taluka</p>
+                  <a href="https://en.wikipedia.org/wiki/Woda_Taluka" class="btn btn-primary">Know more</a>
+                </div>
+              </div>
+            </div>
+            <div class=" one_card">
+              <div class="card" >
+                <img class="card-img-top" src={black_rice} />
+                <div class="card-body">
+                  <h4 class="card-title">Black Rice</h4>
+                  <p class="card-text">195 INR</p>
+                  <p class="card-text">China</p>
+                  <a href="https://en.wikipedia.org/wiki/Black_Rice" class="btn btn-primary">Know more</a>
+                </div>
               </div>
             </div>
           </div>
 
-        </div>
 
-
-        {/* second line// */}
-        <div class="card-columns">
-          <div class=" one_card">
-            <div class="card" >
-              <img class="card-img-top" src={sona} />
-              <div class="card-body">
-                <h4 class="card-title">Sona Masoori</h4>
-                <p class="card-text">50 INR</p>
-                <p class="card-text">Karnataka, Andra Pradesh</p>
-                <a href="https://en.wikipedia.org/wiki/Sona_Masuri" class="btn btn-primary">Know more</a>
-              </div>
-            </div>
-          </div>
-          <div class=" one_card">
-            <div class="card" >
-              <img class="card-img-top" src={kolam} />
-              <div class="card-body">
-                <h4 class="card-title">Kolam</h4>
-                <p class="card-text">50 INR</p>
-                <p class="card-text">Woda Taluka</p>
-                <a href="https://en.wikipedia.org/wiki/Woda_Taluka" class="btn btn-primary">Know more</a>
-              </div>
-            </div>
-          </div>
-          <div class=" one_card">
-            <div class="card" >
-              <img class="card-img-top" src={black_rice} />
-              <div class="card-body">
-                <h4 class="card-title">Black Rice</h4>
-                <p class="card-text">195 INR</p>
-                <p class="card-text">China</p>
-                <a href="https://en.wikipedia.org/wiki/Black_Rice" class="btn btn-primary">Know more</a>
-              </div>
-            </div>
-          </div>
-      </div>
-        
-       
         </div>
         <Footer />
       </div>

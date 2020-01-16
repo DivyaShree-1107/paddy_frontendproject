@@ -161,6 +161,7 @@ class Buyform extends Component {
         //     })
         return (
             <div className="register">
+                <Navbar/>
                 <div class="container">
 
                     <div class="row">
@@ -172,48 +173,46 @@ class Buyform extends Component {
                                         <p class="card-text">Budget Sanctioned:{this.state.budgetini}</p>
                                         <p class="card-text" name="budget" onChange={this.onHandleChangeBudget}>Budget Granted:  {totalgrnt}</p>
                                         <p class="card-text">Budget Remaining:{this.state.budgetini - totalgrnt}</p>
-                                        <a href="https://timesofindia.indiatimes.com/city/bengaluru/karnataka-budget-2019-20-highlights/articleshow/67896950.cms" class="btn btn-primary">Updates about Budget</a>
+                                        <a href="https://timesofindia.indiatimes.com/city/bengaluru/karnataka-budget-2019-20-highlights/articleshow/67896950.cms" class="btn btn-primary updates_btn">Updates about Budget</a>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm">
-                            <h1>Buy form</h1>
-                            <label><b>Name</b></label><br />
-                            <input type="text" name="Name" className="one" onChange={this.onHandleChange} /><br />
-                            <p >{this.state.nerr}</p>
-                            <label><b>Address</b></label><br />
-                            <input type="text" name="Address" className="one" onChange={this.onHandleChange} /><br />
-                            <p >{this.state.aerr}</p>
-                            <label ><b>RTCNumber</b></label><br />
-                            <input type="number" name="RTCNumber" className="one" onChange={this.onHandleChange} /><br />
-                            <p >{this.state.rtcerr}</p>
-                            <label ><b>Quantity</b></label><br />
-                            <input type="number" name="Quantity" className="one" onChange={this.onHandleChange} /><br /><br />
-                            <p >{this.state.qerr}</p>
-                            <label ><b>Price</b></label><br />
-                            <input type="number" name="Price" className="one" onChange={this.onHandleChange} /><br /><br />
-                            <p >{this.state.perr}</p>
-                            <label ><b>Type</b></label><br />
-                            <input type="text" name="Type" className="one" onChange={this.onHandleChange} /><br /><br />
-                            <label ><b>Account Name</b></label><br />
-                            <input type="text" name="AccName" className="one" onChange={this.onHandleChange} /><br /><br />
-                            <label ><b>Account Number</b></label><br />
-                            <input type="number" name="AccNumber" className="one" onChange={this.onHandleChange} /><br /><br />
-                            <a href="" onClick={this.onHandleClicks}>you have already account</a>
-                            <p >{this.state.phnerr}</p>
-                            <button onClick={this.onHandleClick} className="btn1"><b>Submit</b></button><a href="#" onClick={this.onHandleClicksCancel}>Cancel</a>
+                        <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm_buy">
+                            <h1 className="tle_buy">Buy form</h1>
+                            <label className="label_buy1"><b>Name</b></label>
+                            <input type="text" name="Name" className="one_buy" onChange={this.onHandleChange} /><br />
+                            <p className="error_buy">{this.state.nerr}</p>
+                            <label className="label_buy2"><b>Address</b></label>
+                            <input type="text" name="Address" className="one_buy" onChange={this.onHandleChange} /><br />
+                            <p className="error_buy">{this.state.aerr}</p>
+                            <label className="label_buy3" ><b>RTCNumber</b></label>
+                            <input type="number" name="RTCNumber" className="one_buy" onChange={this.onHandleChange} /><br />
+                            <p className="error_buy">{this.state.rtcerr}</p>
+                            <label className="label_buy4"><b>Quantity</b></label>
+                            <input type="number" name="Quantity" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+                            <p className="error_buy">{this.state.qerr}</p>
+                            <label className="label_buy5"><b>Price</b></label>
+                            <input type="number" name="Price" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+                            <p className="error_buy" >{this.state.perr}</p>
+                            <label className="label_buy6"><b>Type</b></label>
+                            <input type="text" name="Type" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+                            <label className="label_buy7" ><b>Acc Name</b></label>
+                            <input type="text" name="AccName" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+                            <label className="label_buy8" ><b>Acc Number</b></label>
+                            <input type="number" name="AccNumber" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+                            <button onClick={this.onHandleClick} className="btn1_sub">Submit</button>
+                            <button onClick={this.onHandleClicksCancel} className="btn1_cancel">Cancel</button>
                         </div>
                         <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         );
     }
-
-
 }
 const mapStateToProps = (state) => {
     debugger

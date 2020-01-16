@@ -8,7 +8,10 @@ import Dashboard from './Component/Dashboard/Dashboard';
 import Buyform from './Component/Buyform/Buyform';
 import Login from './Component/Login/Login';
 import Receipt from './Component/Receipt/Receipt';
-import Dashboarduser from './Component/Dashboarduser/Dashboarduser';
+import {Elements, StripeProvider} from 'react-stripe-elements';
+import CheckoutForm from './Component/CheckoutForm/CheckoutForm';
+import Dummy from './Component/Dummy/Dummy';
+
 
 const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
   <Route
@@ -28,17 +31,24 @@ function App() {
       <Router>
 
         <switch>
-          <Route exact path="/" component={Info}></Route>
+          <Route exact path="/" component={Dummy}></Route>
           <PrivateRoute exact path='/info' component={Info}></PrivateRoute>
          <Route exact path='/register' component={Register}></Route>
-         <Route exact path='/contact' component={Contact}></Route> 
+         <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute> 
          <Route exact path='/login' component={Login}></Route> 
-         <Route exact path='/buy' component={Buyform}></Route> 
-         <Route exact path='/receipt' component={Receipt}></Route> 
-         <Route exact path='/dashboarduser' component={Dashboarduser}></Route> 
-         <PrivateRoute exact path='/dashboard' component={Dashboard}></PrivateRoute>        
+         <PrivateRoute exact path='/buy' component={Buyform}></PrivateRoute> 
+         <PrivateRoute exact path='/receipt' component={Receipt}></PrivateRoute> 
+           <PrivateRoute exact path='/dashboard' component={Dashboard}></PrivateRoute>        
         </switch>
       </Router>
+      {/* <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
+        <div className="example">
+          <h1>React Stripe Elements Example</h1>
+          <Elements>
+            <CheckoutForm />
+          </Elements>
+        </div>
+      </StripeProvider> */}
     </div>
   )
 }

@@ -10,7 +10,7 @@ password: regUser.password,
 Confirmpassword: regUser.Confirmpassword,
 email: regUser.email,
 Mobnum: regUser.Mobnum,
-Admin:regUser.Admin
+role:regUser.role
 })
 .then(res => {
 console.log(res)

@@ -29,15 +29,12 @@ export function loginHandle(userdata) {
             .then(response => {
                 debugger
                 sessionStorage.setItem('authentication', response.data.token)
-            sessionStorage.setItem('userEmail', response.data.email)
+            sessionStorage.setItem('role', response.data.role)
                 if(!response.data.Admin)
                 {
-                    BrowserHistory.push('/dashboarduser')
+                    BrowserHistory.push('/dashboard')
                 }
-                else{
-                   BrowserHistory.push('/dashboard');
-
-                }
+                
                 // dispatch(SuccessFunc(ActionTypes.ADD_LOGIN_SUCCESS, response.data));
                 // BrowserHistory.push('/dashboard');
             })

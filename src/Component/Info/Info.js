@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import paddy from '../Info/hdimgpaddy.jpeg'
 import './Info.css';
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 // import { Navbar } from 'react-bootstrap';
 
 class Info extends Component {
@@ -219,7 +220,7 @@ class Info extends Component {
             : null
         }
 
-
+        <Footer/>
 
       </div>
 

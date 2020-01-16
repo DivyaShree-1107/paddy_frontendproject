@@ -1,0 +1,35 @@
+.rec_tle{
+    font-size: 4.5rem;
+}
+.rec_label{
+    font-size: 28px;
+}
+.recep{
+    font-size: 25px;
+    height: 50px;
+    width: 100px;
+}
+.recep_inp{
+    width: 260px;
+    height: 45px;
+    margin-left: 35px;
+    font-size: 23px;
+    padding-right:90px;
+}
+.recep_inp2{
+    width: 260px;
+    height: 45px;
+    margin-left: 35px;
+    font-size: 23px;
+}
+.login_receipt{
+    font-size: 20px;
+    width: 80px;
+    height: 45px;
+    background-color: rgb(73, 73, 231);
+    color: white;
+    margin-left: 15px;
+}
+.recep_body{
+    height: 500px;
+}
