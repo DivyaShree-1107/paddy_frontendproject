@@ -1,6 +1,7 @@
 .home_paddy_img{
-    width: 1842px;
-    height: 502px;
+    width: 1944px;
+    height: 1000px;
+    margin: 50px;
 }
 .grid_box{
     display: grid;

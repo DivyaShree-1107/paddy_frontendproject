@@ -172,7 +172,7 @@ class Register extends Component {
               </div>
             </div>
             <button onClick={this.onHandleClick} className="btn1_reg"><b>Register</b></button><br />
-            <a href="#" className="already" onClick={this.onHandleClicks}>Already have an Account ? </a><button onClick={this.onHandleLogin} className="btn2_reg"><b>Login</b></button><br />
+            <a href="#" className="already" onClick={this.onHandleClicks}>Already have an Account ? </a><button onClick={this.onHandleLogin} className="btn2_reg"><b>Login</b></button><br /><br/>
             <span className="cancel_reg" onClick={this.onHandleClicksCancel}>Cancel</span>
           </div>
         </div>

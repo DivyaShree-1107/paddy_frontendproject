@@ -2,20 +2,20 @@
     
   background-color: rgb(29, 29, 37);
     width: 100%;
-    height: 120px;
+    height: 220px;
     
  }
  .comp_name{
     font-size: 23px;
  }
  .nav_text{
-     font-size: 20px;
+   font-size: 41px;
      color: white;
  }
  .nav_button{
      border: none;
      background-color: inherit;
-     color:white
+     color: #6db6b6;
  }
  .img_paddys{
     border-radius: 50%;
@@ -24,16 +24,19 @@
     margin-left: -321px;
  }
  .nav_title{
-   font-size: 30px;
+   font-size: 67px;
    font-family: cursive;
    /* margin-left: -22px; */
-   color: white;
-   margin-left: -9px;
+   color: #96ad00;
+   width: 171px;
+   height: 112px;
+   border-radius: 50%;
+   margin-left: -168px;
  }
  .paddy_logo{
-    width: 120px;
-    height: 60px;
-    border-radius: 50%;
-    margin-left: 35px;
+   width: 250px;
+   height: 260px;
+   border-radius: 50%;
+   margin-left: -168px;
  }
  

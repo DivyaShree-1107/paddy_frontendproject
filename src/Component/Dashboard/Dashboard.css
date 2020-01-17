@@ -1,18 +1,37 @@
 .slide-container{
     padding: 70px;
 }
-.cards_img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-.card{
-  display: inline-block;
-  width: 56%;
-  height: 389px;
+.btn-primary{
+  color: white;
+    font-size: 32px;
+    height: 95px;
+    width: 350px;
 }
 
-
+.card_text{
+  font-size: 33px;
+}
+.home_paddy_img{
+  width: 1944px;
+  height: 700px;
+}
+.scroll_quotes{
+  font-size: 4rem;
+    color: #9292c6;
+}
+.header{
+  font-size: 6.5rem;
+  background-color: #d9d4d4;
+ 
+  height: 160px;
+  padding-top: 36px;
+    color: #424257;
+}
+.related_side{
+  background-color: grey;
+    height: 90px;
+    font-size: 55px;
+}
 .para_body{
   height: 349px;
 }
@@ -20,10 +39,28 @@
   height: 244px;
 }
 .img_title{
-    font-size: 3.75rem;
-    text-align: center;
-    color: #6d6d71;
-    padding-bottom: 20px;
+  font-size: 7.75rem;
+  text-align: center;
+  color: #06060f;
+  padding-bottom: 218px;
+
+}
+.card-img-top{
+  height: 500px;
+  width: 450px;
+}
+.card-columns{
+  width: auto;
+  height: 900px;
+}
+.card-title {
+  font-size: 32px;
+}
+.one_card{
+  width: 600px;
+  padding-left: 50px;
+  margin-left: 151px;
+  background-color: #caca9b;
 }
 
 
@@ -33,7 +70,7 @@
 }
 
 .container_para{
-  height: 420px;
+  height: 872px;
 }
 
 .container{
@@ -45,14 +82,12 @@
     position: relative;
     top: 10px;
   }
-  /* .content {
-    height: 1000px;
-  } */
+  
   .menu {
     background-color: rgb(245, 219, 219);
     color: #191818;
-    height: 192px;
-    font-size: 14px;
+    height: 515px;
+    font-size: 38px;
   }
   .related {
     background-color: grey;
@@ -60,9 +95,6 @@
     font-size: 20px;
   }
   
-  .tall {
-    height: 100vh;
-  }
   .para_body{
     display: flex;
     flex-wrap: wrap;
@@ -72,11 +104,12 @@
 
   }
   .head_dash{
-    font-size: 3rem;
+    font-size: 4.5rem;
+    color: #785d5d;
   }
   .para_dash{
     margin-top: 32px;
-    font-size: 26px;
+    font-size: 36px;
     color: black;
   }
 
@@ -106,9 +139,10 @@
 
 /* Make it pretty */
 .microsoft {
-    padding-left: 1.5em;
-    position: relative;
-    font: 16px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  padding-left: 1.5em;
+  position: relative;
+  font: 36px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  color: #2d2d91;
 }
 .microsoft:before, .microsoft::before {
     z-index: 2;

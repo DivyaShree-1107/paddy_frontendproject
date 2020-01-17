@@ -1,28 +1,30 @@
 .reg_body{
     padding-top: 50px;
-    padding-right: 921px;
-    /* width: 100%; */
+    /* padding-right: 921px; */
     justify-content: left;
-    background: linear-gradient(to top, #99ff99 0%, #ffffff 88%);
+    /* background: linear-gradient(to top, #99ff99 0%, #ffffff 88%); */
     padding-bottom: 114px;
  
-border:solid 1px cornsilk;
+/* border:solid 1px cornsilk; */
 background-position: center;
-background-size: cover;
-height: 1000px;
-width: 2899px;
-/* padding: 0;
-margin-top: 70px; */
 
+
+background: url('./bg3.jpeg') no-repeat;
+
+
+border: solid 1px cornsilk;
+background-size: cover;
+height: 1500px;
+width: 3099px;
 }
 .regcont{
     text-align: left;
 
 }
 .regimg{
-    width: 850px;
-    height: 950px;
-    padding-left: 15px;
+    width: 1350px;
+    height: 1150px;
+    padding-left: 415px;
 }
 .register_container{
     max-width: 1083px;
@@ -31,11 +33,14 @@ margin-top: 70px; */
     background: url('./bg1.jpeg') no-repeat;
 }
 .frm_reg{
-    padding-left: 250px;
+    padding-left: 150px;
+    padding-top: 62px;
+    background-color: #c8e9e39e;
+    margin-left: -97px;
 }
 .card-title{
-    margin-right: 250px;
-    font-size: 40px;
+    margin-right: 403px;
+    font-size: 95px;
 }
 .card_body{
     background-color: lightpink;
@@ -44,63 +49,69 @@ margin-top: 70px; */
     padding-top: 80px;
 }
 .register_fields_1{
-    font-size: 22px;
-    padding-top: 15px;
+    font-size: 37px;
+    padding-top: 22px;
+    margin-left: 250px;
+    margin-top: 20px;
 }
 .register_fields_2{
-    font-size: 22px;
-    padding-top: 15px;
-    margin-right: 50px;
+    font-size: 37px;
+    padding-top: 28px;
+    margin-left: 340px;
 }
 .register_fields_3{
-    font-size: 22px;
-    padding-top: 15px;
+    font-size: 37px;
+    padding-top: 24px;
     margin-right: 7px;
+    margin-left: 265px;
 }
 .register_fields_4{
-    font-size: 22px;
-    padding-top: 15px;
-    margin-left: -82px;
+    font-size: 37px;
+    /* padding-top: 15px; */
+    margin-left: 122px;
+    margin-top: 25px;
 }
 .register_fields_5{
-    font-size: 22px;
-    padding-top: 15px;
-    margin-left: -44px;
+    font-size: 37px;
+    /* padding-top: 15px; */
+    margin-left: 183px;
+    margin-top: 29px;
+
 }
 .one_input{
-    width: 300px;
-    height: 40px;
+    width: 330px;
+    height: 54px;
     font-size: 25px;
 }
 .btn1_reg{
-    width: 220px;
-    height: 53px;
-    font-size: 25px;
+    margin-right: 135px;
     color: white;
     background-color: #425bd8;
-    margin-top: 26px;
-
-    margin-right: 152px;
+    font-size: 35px;
+    width: 350px;
+    margin-top: 39px;
+    height: 71px;
+    border-radius: 13px;
 }
 .btn2_reg{
-    width: 220px;
-    height: 53px;
-    font-size: 25px;
+    
     color: white;
     background-color: #425bd8;
-    margin-top: 26px;
-    margin-right: 248px;    
-
+    width: 350px;
+    margin-top: 39px;
+    height: 71px;
+    font-size: 35px;
+    border-radius: 13px;
 }
 .already{
     
-    font-size: 20px;
+    font-size: 33px;
     color: #28687d;
-    margin-left: -137px;
+    margin-left: -499px;
 }
 .cancel_reg{
-    font-size: 25px;
-    margin-left: -150px;
+    font-size: 41px;
+    margin-left: -117px;
     color: #28687d;
    }
    .error_reg{

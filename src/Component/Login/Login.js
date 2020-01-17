@@ -78,11 +78,7 @@ class Login extends Component {
         return (
             <div className="login">
                 <div class="login_container">
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-                            <img className='loginimg' src={loginimg} ></img>
-                        </div>
-                        <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 frm_login">
+                                           <div class="col-sm-5 col-lg-5 col-md-5 col-xs-5 frm_login">
                             <img className='paddy_logo' src={paddylo} ></img><br /><br />
                             <span id="LoginTitle">Login</span><br />
 
@@ -96,10 +92,10 @@ class Login extends Component {
 
                             <button onClick={this.onHandleClick} className="btn1_login"><b>Login</b></button>
                             <button onClick={this.onHandleClickRegister} className="btn3_login"><b>Register</b></button>
-                            <br />
+                            <br /><br/>
                             <a className="btn2_login" href="#" onClick={this.onHandleClicksCancel}>Cancel</a>
                         </div>
-                    </div>
+                   
                 </div>
                 {/* <div className="slide-container">
                     <Fade  {...fadeProperties}>

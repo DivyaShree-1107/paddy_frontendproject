@@ -1,0 +1,4 @@
+.main_logiin{
+    display: grid;
+    grid-template-columns: 500px 500px;
+}

@@ -162,18 +162,18 @@ class Buyform extends Component {
         return (
             <div className="register">
                 <Navbar/>
-                <div class="container">
+                <div id="container">
 
                     <div class="row">
                         <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                            <div class="container one_card">
-                                <div class="card" >
-                                    <div class="card-body">
-                                        <h4 class="card-title">Budget</h4>
-                                        <p class="card-text">Budget Sanctioned:{this.state.budgetini}</p>
-                                        <p class="card-text" name="budget" onChange={this.onHandleChangeBudget}>Budget Granted:  {totalgrnt}</p>
-                                        <p class="card-text">Budget Remaining:{this.state.budgetini - totalgrnt}</p>
-                                        <a href="https://timesofindia.indiatimes.com/city/bengaluru/karnataka-budget-2019-20-highlights/articleshow/67896950.cms" class="btn btn-primary updates_btn">Updates about Budget</a>
+                            <div class="container one_card_buy">
+                                <div class="card_buy" >
+                                    <div class="card-body_buy">
+                                        <h4 class="card-title_buy">Budget</h4>
+                                        <p class="card-text_buy">Budget Sanctioned:{this.state.budgetini}</p>
+                                        <p class="card-text_buy" name="budget" onChange={this.onHandleChangeBudget}>Budget Granted:  {totalgrnt}</p>
+                                        <p class="card-text_buy">Budget Remaining:{this.state.budgetini - totalgrnt}</p>
+                                        <a href="https://timesofindia.indiatimes.com/city/bengaluru/karnataka-budget-2019-20-highlights/articleshow/67896950.cms" class="btn btn-primary updates_btn_buy">Updates about Budget</a>
                                     </div>
                                 </div>
                             </div>
