@@ -52,9 +52,9 @@ class Receipt extends Component {
     render() {
         let itemList = this.state.Users.map(user => {
             // console.log("ghvf",user.RTCNumber, this.state.RTCNumber)
-            if (user.RTCNumber == this.state.RTCNumber && user.Name ==this.state.name) {
+            if (user.RTCNumber == this.state.RTCNumber ) {
             return (
-                <div className="card1" key={user._id}>
+                <div className="card1_receipt" key={user._id}>
                    <table>
                        <tr>
                         <td>Name</td>
@@ -99,12 +99,12 @@ class Receipt extends Component {
             <div>
                 <Navbar/>
             
-                <div >
+                <div className="receipt_body" >
              
-                    <div class="row recep_body">
+                    <div class="row ">
                         <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                        <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 ">
-                            <h1 className="rec_tle">Login</h1>                       
+                        <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 recep_body ">
+                            <h1 className="rec_tle">Receipt</h1>                       
                             <label className="rec_label">Name </label>
                             <input type="text" name="Name" className="recep_inp" onChange={this.onHandleChangeReceipt} /><br />
                             <p >{this.state.nerr}</p>

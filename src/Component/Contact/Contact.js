@@ -31,8 +31,8 @@ class Contact extends Component {
               <div><input className="name" required type="email" placeholder="Email"></input></div>
               <div className="name1">Type Your Message Here:</div>
               <div><textarea className="name" type="text" rows="2" cols="25" required placeholder="Please enter your text here."></textarea></div>
+              <button className="submitt_contact" type="submit"> Submit</button>
             </div>
-            <div><button className="submitt" type="submit"> Submit</button></div>
           </div>
         </div>
       </div>

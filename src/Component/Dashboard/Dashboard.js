@@ -104,9 +104,9 @@ class Dashboard extends Component {
               <div class="card" >
                 <img class="card-img-top" src={gowri} />
                 <div class="card-body">
-                  <h4 class="card-title">Gowri Sanna</h4>
-                  <p class="card-text">70 INR</p>
-                  <p class="card-text">Karnataka</p>
+                  <h4 class="card-title_info">Gowri Sanna</h4>
+                  <p class="card_text_info">70 INR</p>
+                  <p class="card_text_info">Karnataka</p>
                   <a href="https://en.wikipedia.org/wiki/Gowri_sanna" class="btn btn-primary">Know more</a>
                 </div>
               </div>
@@ -115,9 +115,9 @@ class Dashboard extends Component {
               <div class="card" >
                 <img class="card-img-top" src={jolaga} />
                 <div class="card-body">
-                  <h4 class="card-title">Jolaga</h4>
-                  <p class="card-text">65 INR</p>
-                  <p class="card-text">Malnad</p>
+                  <h4 class="card-title_info">Jolaga</h4>
+                  <p class="card_text_info">65 INR</p>
+                  <p class="card_text_info">Malnad</p>
                   <a href="https://en.wikipedia.org/wiki/Jolaga" class="btn btn-primary">Know more</a>
                 </div>
               </div>
@@ -126,9 +126,9 @@ class Dashboard extends Component {
               <div class="card" >
                 <img class="card-img-top" src={salem} />
                 <div class="card-body">
-                  <h4 class="card-title">Salem Sanna</h4>
-                  <p class="card-text">45 INR</p>
-                  <p class="card-text">Tamil Nadu</p>
+                  <h4 class="card-title_info">Salem Sanna</h4>
+                  <p class="card_text_info">45 INR</p>
+                  <p class="card_text_info">Tamil Nadu</p>
                   <a href="https://en.wikipedia.org/wiki/Salem_sanna" class="btn btn-primary">Know more</a>
                 </div>
               </div>
@@ -143,20 +143,20 @@ class Dashboard extends Component {
               <div class="card" >
                 <img class="card-img-top" src={sona} />
                 <div class="card-body">
-                  <h4 class="card-title">Sona Masoori</h4>
-                  <p class="card-text">50 INR</p>
-                  <p class="card-text">Karnataka, Andra Pradesh</p>
+                  <h4 class="card-title_info">Sona Masoori</h4>
+                  <p class="card_text_info">50 INR</p>
+                  <p class="card_text_info">Karnataka, Andra Pradesh</p>
                   <a href="https://en.wikipedia.org/wiki/Sona_Masuri" class="btn btn-primary">Know more</a>
                 </div>
               </div>
             </div>
-            <div class=" one_card">
+            <div class="one_card">
               <div class="card" >
                 <img class="card-img-top" src={kolam} />
                 <div class="card-body">
-                  <h4 class="card-title">Kolam</h4>
-                  <p class="card-text">50 INR</p>
-                  <p class="card-text">Woda Taluka</p>
+                  <h4 class="card-title_info">Kolam</h4>
+                  <p class="card_text_info">50 INR</p>
+                  <p class="card_text_info">Woda Taluka</p>
                   <a href="https://en.wikipedia.org/wiki/Woda_Taluka" class="btn btn-primary">Know more</a>
                 </div>
               </div>
@@ -165,9 +165,9 @@ class Dashboard extends Component {
               <div class="card" >
                 <img class="card-img-top" src={black_rice} />
                 <div class="card-body">
-                  <h4 class="card-title">Black Rice</h4>
-                  <p class="card-text">195 INR</p>
-                  <p class="card-text">China</p>
+                  <h4 class="card-title_info">Black Rice</h4>
+                  <p class="card_text_info">195 INR</p>
+                  <p class="card_text_info">China</p>
                   <a href="https://en.wikipedia.org/wiki/Black_Rice" class="btn btn-primary">Know more</a>
                 </div>
               </div>

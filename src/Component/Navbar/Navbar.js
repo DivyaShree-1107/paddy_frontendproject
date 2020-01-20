@@ -44,7 +44,7 @@ class Navbar extends Component {
     return (
       <div className="row navbar" >
         <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav_text"  >
-          <img className='paddy_logo' src={paddy} ></img>
+          <img className='paddy_logo_nav' src={paddy} ></img>
         </div>
         <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav_text">
           <span className="nav_title">Dhaanya Dhaare</span>

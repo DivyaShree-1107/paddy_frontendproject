@@ -18,7 +18,7 @@ class Footer extends Component {
 
 
               <div class="col-md-3 col-lg-3 col-xl-3 ">
-                <img className='paddy_logo' src={paddy} ></img>
+                <img className='paddy_logo_footer' src={paddy} ></img>
                 <h6 class="text-uppercase mb-4 font-weight-bold comp_name">Dhaanya Dhaare</h6>
                 <p>If you give me rice, I'll eat today; if you teach me how to grow rice, I'll eat every day.</p>
               </div>
@@ -40,7 +40,7 @@ class Footer extends Component {
 
 
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact Info</h6>
+                <h6 class="text-uppercase cont_footer">Contact Info</h6>
                 <p>
                   <i class="fas fa-home mr-3"></i>Vishweshwaraiah Canal (V.C) Farm, Mandya-Melkote Road, Mandya, Karnataka 571405 </p>
                 <p>

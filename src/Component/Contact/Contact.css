@@ -1,43 +1,52 @@
 .page{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 19px;
+    
+    background: url('../Contact/cont1.jpeg') no-repeat;
+    border: solid 1px cornsilk;
+background-size: cover;
+height: 1500px;
+width: 3099px;
 }
 .contact_us{
-    background-color: rgb(165, 158, 62);
-    height: 600px;
-    width: 569px;
+    background-color: rgb(124, 129, 46);
+    height: 950px;
+    width: 670px;
+    border-radius: 50px;
     margin-left: 251px;
-    margin-left: 51px;
+    margin-left: 451px;
+    margin-top: 53px;
+    padding-top: 100px;
 
 }
 .heading{
     padding-top: 118px;
     padding-left: 26px;
-    font-size: 21px;
+    font-size: 56px;
  
 }
 .space{
     background-color: white;
 }
 .contactinfo{
-    background-color: white;
-    padding-left: 314px;
     text-align: left;
-    padding-top: 12px;
+    padding-top: 56px;
+    width: 900px;
+    margin-left: 250px;
 }
-.info{
-    color: white;
-    font-family: initial;
-    margin-top: -16px;
+
+
+.info {
+    font-family: auto;
+    margin-top: -1px;
     font-style: oblique;
-    font-size: 26px;
-    background-color: white;
-    margin-left: -215px;
+    font-size: 35px;
+    background-color: #ffffff30;
+    margin-left: -335px;
     margin-right: 415px;
 }
 .img_paddy{
-    width: 88px;
+    width: 160px;
     border-radius: 50%;
     z-index: 2;
     top: 96px;
@@ -45,10 +54,9 @@
     left: 15px;
 }
 .infotitle{
-    color: #a58f23;
-    font-size: 28px;
-    font-family: inherit;
-    margin-left: -273px;
+   color: rgb(124, 129, 46);
+    font-size: 48px;
+    margin-left: -373px;
    
 }
 .page{
@@ -59,23 +67,26 @@
 .name{
     border: none;
     border-bottom-style: solid;
+    -webkit-mask-box-image-width: 2px;
     mask-border-width: 2px;
     color: black;
     width: 65%;
-    
+    background-color: #ffffff00;
 }
 .name1{
-    padding: 16px;
-    padding-right: 41px;
+    padding: 31px;
     color: black;
-    font-size: 20px;
+    font-size: 50px;
 }
-.submitt{
-    background-color: white;
-    border: none;
-    color: rgb(173, 167, 77);
-    font-size: 22px;
-    z-index: -1;
-    position: absolute;
-    right: 710px;
+
+.submitt_contact{
+    height: 80px;
+    width: 250px;
+    font-size: 53px;
+    color: black;
+    background-color: rgb(124, 129, 46);
+
+    margin-top: 26px
+    
+   
 }

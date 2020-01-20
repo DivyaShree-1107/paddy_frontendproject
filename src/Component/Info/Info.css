@@ -1,6 +1,8 @@
 .home_paddy_img{
-    width: 1944px;
-    height: 1000px;
+    width: 2246px;
+    height: 900px;
+    border-radius: 43px;
+    box-shadow: 25px 25px 28px 28px #7d7d7db3;
     margin: 50px;
 }
 .grid_box{
@@ -19,19 +21,36 @@
 .paddy_variety_sub_titl{
     padding: 20px;
     border-radius: 10px;
-    background-color: #ceffc1;
-    font-size: 20px;
+    font-size: 44px;
+    margin: 43px;
+    background-color: #ffffff6b;
+    border-radius: 19px;
+    box-shadow: 20px 25px 48px 24px #585858;
+    font-size: 50px;
+    color: #11093f;
 
 }
 table, th, td,tr{
  border: 2px solid black ;
  column-width: 1300px;
- background-color: rgb(245, 237, 225);
- font-size: 25px;
+ background-color: rgba(255, 245, 195, 0.32);
+ font-size: 35px;
 }
 .div_content{
-    margin: 133px;
+    margin: 153px;
 }
-.table_content{
-    font-size: 25px;
+
+
+.info_main{
+    background: url('./info1.jpeg') no-repeat;
+    border: solid 1px cornsilk;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 3099px;
+    
+}
+.image_info{
+    color: blue;
+    font-size: 35px;
 }

@@ -11,3 +11,7 @@
 .card_pay_submit{
     font-size: 25px;
 }
+.check_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}

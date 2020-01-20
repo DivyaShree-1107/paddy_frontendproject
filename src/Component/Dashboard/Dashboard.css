@@ -8,8 +8,8 @@
     width: 350px;
 }
 
-.card_text{
-  font-size: 33px;
+.card_text_info{
+  font-size: 32px;
 }
 .home_paddy_img{
   width: 1944px;
@@ -53,12 +53,12 @@
   width: auto;
   height: 900px;
 }
-.card-title {
-  font-size: 32px;
+.card-title_info{
+  font-size: 60px;
 }
 .one_card{
   width: 600px;
-  padding-left: 50px;
+  padding-left: -17px;
   margin-left: 151px;
   background-color: #caca9b;
 }

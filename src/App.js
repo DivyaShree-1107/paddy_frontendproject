@@ -8,7 +8,9 @@ import Dashboard from './Component/Dashboard/Dashboard';
 import Buyform from './Component/Buyform/Buyform';
 import Login from './Component/Login/Login';
 import Receipt from './Component/Receipt/Receipt';
-import { Elements, StripeProvider } from 'react-stripe-elements';
+import StripeProvider1 from './Component/CheckoutForm/StripeProvider1';
+
+// import { Elements, StripeProvider } from 'react-stripe-elements';
 import CheckoutForm from './Component/CheckoutForm/CheckoutForm';
 import Dummy from './Component/Dummy/Dummy';
 
@@ -27,18 +29,20 @@ const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
 function App() {
   return (
     <div className="App ">
-      
+
       <Router>
 
         <switch>
-          <Route exact path="/" component={Register}></Route>
+          <Route exact path="/" component={StripeProvider1}></Route>
           <PrivateRoute exact path='/info' component={Info}></PrivateRoute>
-         <Route exact path='/register' component={Register}></Route>
-         <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute> 
-         <Route exact path='/login' component={Login}></Route> 
-         <PrivateRoute exact path='/buy' component={Buyform}></PrivateRoute> 
-         <PrivateRoute exact path='/receipt' component={Receipt}></PrivateRoute> 
-           <PrivateRoute exact path='/dashboard' component={Dashboard}></PrivateRoute>        
+          <Route exact path='/register' component={Register}></Route>
+          <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute>
+          <Route exact path='/login' component={Login}></Route>
+          <PrivateRoute exact path='/buy' component={Buyform}></PrivateRoute>
+          <PrivateRoute exact path='/receipt' component={Receipt}></PrivateRoute>
+          <PrivateRoute exact path='/dashboard' component={Dashboard}></PrivateRoute>
+          <PrivateRoute exact path='/checkoutform' component={StripeProvider1}></PrivateRoute>
+
         </switch>
       </Router>
       {/* <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
