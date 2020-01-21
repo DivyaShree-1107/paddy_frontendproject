@@ -14,8 +14,8 @@
 .page-footer{
     background-color: rgb(29, 29, 37);
     color: white;
-    height: 436px;
-    font-size: 22px;
+    height: 400px;
+    font-size: 17px;
     width: 100%;
     position:relative;
     margin-top: 50px;
@@ -26,14 +26,14 @@
 }
 .cpy_right{
     text-align: right;
-    margin-top: 25px;
+    margin-top: 20px;
     padding-right: 195px;
 }
 .comp_name{
-    font-size: 46px;
+    font-size: 30px;
 }
 .cont_footer{
     margin-top: 15px;
-    font-size: 37px;
+    font-size: 25px;
 
 }

@@ -1,36 +1,40 @@
 .slide-container{
-    padding: 70px;
+  padding-top: 13px;
+  padding-left: 54px;
 }
 .btn-primary{
   color: white;
-    font-size: 32px;
-    height: 95px;
-    width: 350px;
+  font-size: 23px;
+  height: 44px;
+  width: 310px;
+
 }
 
 .card_text_info{
-  font-size: 32px;
+  font-size: 16px;
 }
 .home_paddy_img{
-  width: 1944px;
-  height: 700px;
+  width: 904px;
+  height: 350px;
+  margin: 9px;
+  
 }
 .scroll_quotes{
-  font-size: 4rem;
-    color: #9292c6;
+  font-size: 22px;
+    color: #17171a;
 }
 .header{
-  font-size: 6.5rem;
+  font-size: 2.5rem;
   background-color: #d9d4d4;
- 
-  height: 160px;
-  padding-top: 36px;
-    color: #424257;
+  height: 118px;
+  padding-top: 31px;
+  color: #424257;
+
 }
 .related_side{
-  background-color: grey;
-    height: 90px;
-    font-size: 55px;
+  background-color: #bdb9b9;
+    height: 54px;
+    font-size: 25px;
 }
 .para_body{
   height: 349px;
@@ -39,27 +43,28 @@
   height: 244px;
 }
 .img_title{
-  font-size: 7.75rem;
+  font-size: 2.75rem;
   text-align: center;
   color: #06060f;
-  padding-bottom: 218px;
+  padding-bottom: 20px;
 
 }
 .card-img-top{
-  height: 500px;
-  width: 450px;
+  height: 250px;
+    width: 225px;
 }
 .card-columns{
   width: auto;
-  height: 900px;
+    height: 533px;
+
 }
 .card-title_info{
-  font-size: 60px;
+  font-size: 25px;
 }
 .one_card{
-  width: 600px;
+  width: 350px;
   padding-left: -17px;
-  margin-left: 151px;
+  margin-left: 60px;
   background-color: #caca9b;
 }
 
@@ -70,7 +75,7 @@
 }
 
 .container_para{
-  height: 872px;
+  height: 564px;
 }
 
 .container{
@@ -86,8 +91,8 @@
   .menu {
     background-color: rgb(245, 219, 219);
     color: #191818;
-    height: 515px;
-    font-size: 38px;
+    height: 268px;
+    font-size: 19px;
   }
   .related {
     background-color: grey;
@@ -104,22 +109,21 @@
 
   }
   .head_dash{
-    font-size: 4.5rem;
+    font-size: 1.5rem;
     color: #785d5d;
   }
   .para_dash{
     margin-top: 32px;
-    font-size: 36px;
+    font-size: 20px;
     color: black;
-  }
-
+}
 
 
 .dates{
     color: rgb(109, 70, 96);
 }
   .marquee {
-    width: 100%;
+    width: 1650px;
     overflow: hidden;
     box-sizing: content-box;
     margin-top: 0;
@@ -141,7 +145,7 @@
 .microsoft {
   padding-left: 1.5em;
   position: relative;
-  font: 36px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font: 20px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
   color: #2d2d91;
 }
 .microsoft:before, .microsoft::before {

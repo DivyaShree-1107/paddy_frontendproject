@@ -1,30 +1,27 @@
 .reg_body{
-    padding-top: 50px;
+    background: url('./bg3.jpeg') no-repeat;
+padding-top: 25px;
     /* padding-right: 921px; */
     justify-content: left;
     /* background: linear-gradient(to top, #99ff99 0%, #ffffff 88%); */
-    padding-bottom: 114px;
- 
-/* border:solid 1px cornsilk; */
-background-position: center;
-
-
-background: url('./bg3.jpeg') no-repeat;
-
-
-border: solid 1px cornsilk;
-background-size: cover;
-height: 1500px;
-width: 3099px;
+    padding-bottom: 75px;
+    /* border: solid 1px cornsilk; */
+    background-position: center;
+    /* background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBASEhIVFRIW…qaed40wxqPUvM6vsnFWFzfl/p/rM2pye/tRSMltzOpRQpIr8RxI7CfVNca2SKJQVmqOTg//9k=) no-repeat; */
+    border: solid 1px cornsilk;
+    background-size: cover;
+    height: 800px;
+    width: 1500px;
 }
+
 .regcont{
     text-align: left;
 
 }
 .regimg{
-    width: 1350px;
-    height: 1150px;
-    padding-left: 415px;
+    width: 750px;
+    height: 500px;
+    padding-left: 314px;
 }
 .register_container{
     max-width: 1083px;
@@ -33,14 +30,15 @@ width: 3099px;
     background: url('./bg1.jpeg') no-repeat;
 }
 .frm_reg{
-    padding-left: 150px;
-    padding-top: 62px;
-    background-color: #c8e9e39e;
-    margin-left: -97px;
+    padding-left: 147px;
+    background-color: #c8e9e303;
+    margin-left: -35px;
 }
 .card-title{
-    margin-right: 403px;
-    font-size: 95px;
+    margin-bottom: -2.25rem;
+    font-size: 40px;
+    margin-left: -80px;
+    margin-bottom: 11px;
 }
 .card_body{
     background-color: lightpink;
@@ -49,69 +47,69 @@ width: 3099px;
     padding-top: 80px;
 }
 .register_fields_1{
-    font-size: 37px;
+    font-size: 23px;
     padding-top: 22px;
-    margin-left: 250px;
-    margin-top: 20px;
+    margin-left: 43px;
+    margin-top: -18px;
 }
 .register_fields_2{
-    font-size: 37px;
-    padding-top: 28px;
-    margin-left: 340px;
+    font-size: 23px;
+    padding-top: -2px;
+    margin-left: 93px;
 }
 .register_fields_3{
-    font-size: 37px;
-    padding-top: 24px;
+    font-size: 23px;
+    padding-top: -12px;
     margin-right: 7px;
-    margin-left: 265px;
+    margin-left: 40px;
 }
 .register_fields_4{
-    font-size: 37px;
+    font-size: 23px;
     /* padding-top: 15px; */
-    margin-left: 122px;
-    margin-top: 25px;
+    margin-left: -41px;
+    margin-top: 2px;
 }
 .register_fields_5{
-    font-size: 37px;
+    font-size: 23px;
     /* padding-top: 15px; */
-    margin-left: 183px;
-    margin-top: 29px;
-
+    margin-left: 2px;
+    margin-top: 4px;
 }
 .one_input{
-    width: 330px;
-    height: 54px;
+    width: 292px;
+    height: 34px;
     font-size: 25px;
 }
 .btn1_reg{
-    margin-right: 135px;
+    margin-right: -42px;
     color: white;
     background-color: #425bd8;
-    font-size: 35px;
-    width: 350px;
-    margin-top: 39px;
-    height: 71px;
-    border-radius: 13px;
+    font-size: 23px;
+    width: 264px;
+    margin-top: 4px;
+    height: 46px;
+    border-radius: 32px;
 }
 .btn2_reg{
     
+    margin-right: -148px;
     color: white;
     background-color: #425bd8;
-    width: 350px;
-    margin-top: 39px;
-    height: 71px;
-    font-size: 35px;
-    border-radius: 13px;
+    font-size: 23px;
+    width: 264px;
+    margin-top: 23px;
+    height: 46px;
+    border-radius: 32px;
 }
 .already{
     
-    font-size: 33px;
+    font-size: 21px;
     color: #28687d;
-    margin-left: -499px;
+    margin-left: -354px;
 }
 .cancel_reg{
-    font-size: 41px;
-    margin-left: -117px;
+    font-size: 23px;
+    margin-left: 56px;
     color: #28687d;
    }
    .error_reg{

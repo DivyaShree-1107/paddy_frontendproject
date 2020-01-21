@@ -86,6 +86,7 @@ class Buyform extends Component {
 
 
         // })
+        // BrowserHistory.push('/stripeprovider')
 
 
         if (this.state.Name.length === 0 && this.state.Address.length === 0 && this.state.RTCNumber.length === 0 && this.state.Quantity.length === 0 && this.state.Price.length === 0 && this.state.Type.length === 0) {
@@ -196,8 +197,8 @@ class Buyform extends Component {
                             <label className="label_buy5"><b>Price</b></label>
                             <input type="number" name="Price" className="one_buy" onChange={this.onHandleChange} /><br /><br />
                             <p className="error_buy" >{this.state.perr}</p>
-                            <label className="label_buy6"><b>Type</b></label>
-                            <input type="text" name="Type" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+                            <label className="label_buy6"><b>Date</b></label>
+                            <input type="date" name="Type" className="one_buy" onChange={this.onHandleChange} /><br /><br />
                             <label className="label_buy7" ><b>Acc Name</b></label>
                             <input type="text" name="AccName" className="one_buy" onChange={this.onHandleChange} /><br /><br />
                             <label className="label_buy8" ><b>Acc Number</b></label>

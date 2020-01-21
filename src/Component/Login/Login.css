@@ -5,21 +5,20 @@
     height: 700px;
 } */
 #LoginTitle{
-    font-size: 90px;
+    font-size: 55px;
+    margin-left: -3px;
 }
 #login_subtle{
-    font-size: 41px;
-    padding-top: 37px;
+    font-size: 23px;
+    padding-top: 13px;
 }
 .frm_login{
-    padding-left: 352px;
-    padding-right: 302px;
     background-color: rgba(140, 147, 153, 0.56);
-    height: 700px;
+    height: 600px;
     text-align: center;
-    padding-top: 50px;
-    margin-top: 296px;
-    margin-left: 925px;
+    padding-top: 21px;
+    margin-top: 35px;
+    margin-left: 422px;
     border-radius: 22px;
 }
 .login{
@@ -33,37 +32,46 @@ background: url('./login2.jpeg') no-repeat;
     border: solid 1px cornsilk;
     /* background-position: center; */
     background-size: cover;
-    height: 1500px;
-    width: 3099px;
+    height: 800px;
+    width: 1500px;
 }
 .one_login{
-    width: 60%;
-    height: 68px;
+    width: 250px;
+    height: 37px;
     /* border: none; */
-    font-size: 28px;
+    font-size: 23px;
+    margin-left: 17px;
 }
 .one_login_p{
-    width: 60%;
-    height: 60px;
-    font-size: 28px;
-    margin-left: 66px;
+    width: 250px;
+    height: 37px;
+    /* border: none; */
+    font-size: 23px;
+    margin-left: 52px;
 }
 .btn1_login{
-    height: 63px;
-    width: 200px;
+    height: 46px;
+    width: 185px;
     background-color: #382733ad;
     color: white;
-    font-size: 37px;
+    font-size: 23px;
+    border-radius: 25px;
 }
 .btn2_login{
-    font-size: 46px;
+    font-size: 23px;
 }
 .btn3_login{
-    height: 63px;
-    width: 200px;
+    height: 46px;
+    width: 185px;
     background-color: #382733ad;
     color: white;
-    font-size: 37px;
+    font-size: 23px;
+    border-radius: 25px;
     margin-left: 56px;
-    margin-top: 27px;
+    margin-top: 15px;
+}
+.paddy_logo_login{
+    width: 130px;
+    border-radius: 50%;
+    margin-left: -5px;
 }

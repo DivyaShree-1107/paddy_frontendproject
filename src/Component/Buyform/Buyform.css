@@ -84,9 +84,11 @@ text-align: left;
     font-size: 20px;
 }
 .tle_buy{
-    font-size: 8.5rem;
-    padding-bottom: 28px;
+    font-size: 4.5rem;
+    padding-bottom: 21px;
     color: #dff0e2;
+    padding-top: 9px;
+    margin-left: 237px;
 }
 .one_buy{
     font-size: 35px;

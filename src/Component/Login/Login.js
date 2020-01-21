@@ -79,7 +79,7 @@ class Login extends Component {
             <div className="login">
                 <div class="login_container">
                                            <div class="col-sm-5 col-lg-5 col-md-5 col-xs-5 frm_login">
-                            <img className='paddy_logo' src={paddylo} ></img><br /><br />
+                            <img className='paddy_logo_login' src={paddylo} ></img><br /><br />
                             <span id="LoginTitle">Login</span><br />
 
 

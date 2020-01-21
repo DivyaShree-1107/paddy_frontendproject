@@ -33,7 +33,7 @@ function App() {
       <Router>
 
         <switch>
-          <Route exact path="/" component={StripeProvider1}></Route>
+          <Route exact path="/" component={Register}></Route>
           <PrivateRoute exact path='/info' component={Info}></PrivateRoute>
           <Route exact path='/register' component={Register}></Route>
           <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute>
@@ -41,7 +41,7 @@ function App() {
           <PrivateRoute exact path='/buy' component={Buyform}></PrivateRoute>
           <PrivateRoute exact path='/receipt' component={Receipt}></PrivateRoute>
           <PrivateRoute exact path='/dashboard' component={Dashboard}></PrivateRoute>
-          <PrivateRoute exact path='/checkoutform' component={StripeProvider1}></PrivateRoute>
+          <PrivateRoute exact path='/stripeprovider' component={StripeProvider1}></PrivateRoute>
 
         </switch>
       </Router>
