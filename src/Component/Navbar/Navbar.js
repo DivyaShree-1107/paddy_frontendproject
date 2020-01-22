@@ -49,10 +49,10 @@ class Navbar extends Component {
         <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav_text">
           <span className="nav_title">Dhaanya Dhaare</span>
         </div>
-        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav_text"  >
+        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text"  >
           <button onClick={this.Info} className="nav_button">About</button>
         </div>
-        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text">
+        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav_text">
           <button onClick={this.Contact} className="nav_button">Contact Us</button>
         </div>
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text" >

@@ -79,7 +79,7 @@ class Login extends Component {
             <div className="login">
                 <div class="login_container">
                                            <div class="col-sm-5 col-lg-5 col-md-5 col-xs-5 frm_login">
-                            <img className='paddy_logo_login' src={paddylo} ></img><br /><br />
+                            <img className='paddy_logo_login' src={paddylo} ></img><br />
                             <span id="LoginTitle">Login</span><br />
 
 
@@ -87,7 +87,7 @@ class Login extends Component {
                             <input type="text" name="Mobnum" className="one_login" onChange={this.onHandleChange} /><br />
                             <p >{this.state.uerr}</p>
                             <label id="login_subtle"  >Password</label>
-                            <input type="password" name="password" className="one_login_p" onChange={this.onHandleChange} /><br /><br />
+                            <input type="password" name="password" className="one_login_p" onChange={this.onHandleChange} /><br />
                             <p >{this.state.perr}</p>
 
                             <button onClick={this.onHandleClick} className="btn1_login"><b>Login</b></button>

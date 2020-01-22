@@ -33,7 +33,7 @@ function App() {
       <Router>
 
         <switch>
-          <Route exact path="/" component={Register}></Route>
+          <Route exact path="/" component={Buyform}></Route>
           <PrivateRoute exact path='/info' component={Info}></PrivateRoute>
           <Route exact path='/register' component={Register}></Route>
           <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute>

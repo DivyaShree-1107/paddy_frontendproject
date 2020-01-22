@@ -5,19 +5,19 @@
     height: 700px;
 } */
 #LoginTitle{
-    font-size: 55px;
+    font-size: 36px;
     margin-left: -3px;
 }
 #login_subtle{
     font-size: 23px;
-    padding-top: 13px;
+    padding-top: 2px;
 }
 .frm_login{
     background-color: rgba(140, 147, 153, 0.56);
-    height: 600px;
+    height: 443px;
     text-align: center;
-    padding-top: 21px;
-    margin-top: 35px;
+    padding-top: 9px;
+    margin-top: 137px;
     margin-left: 422px;
     border-radius: 22px;
 }

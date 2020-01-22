@@ -21,12 +21,11 @@
 .paddy_variety_sub_titl{
     padding: 20px;
     border-radius: 10px;
-    font-size: 44px;
-    margin: 43px;
+    margin: 20px;
     background-color: #ffffff6b;
     border-radius: 19px;
     box-shadow: 20px 25px 48px 24px #585858;
-    font-size: 50px;
+    font-size: 23px;
     color: #11093f;
 
 }
@@ -34,7 +33,7 @@ table, th, td,tr{
  border: 2px solid black ;
  column-width: 1300px;
  background-color: rgba(255, 245, 195, 0.32);
- font-size: 35px;
+ font-size: 20px;
 }
 .div_content{
     margin: 153px;
@@ -47,10 +46,10 @@ table, th, td,tr{
     background-position: center;
     background-size: cover;
     height: auto;
-    width: 3099px;
+    width: 1500px;
     
 }
 .image_info{
-    color: blue;
-    font-size: 35px;
+    color: #00005d;
+    font-size: 25px;
 }
