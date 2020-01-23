@@ -109,7 +109,7 @@ class Receipt extends Component {
                             <input type="text" name="Name" className="recep_inp" onChange={this.onHandleChangeReceipt} /><br />
                             <p >{this.state.nerr}</p>
                             <label className="rec_label"><b>RTC Num</b></label>
-                            <input type="number" name="RTCNumber" className="recep_inp2" onChange={this.onHandleChangeReceipt} /><br /><br />
+                            <input type="number" name="RTCNumber" className="recep_inp2" onChange={this.onHandleChangeReceipt} /><br />
                             <p >{this.state.rtcerr}</p>
                             <button className="login_receipt" onClick={this.onHandleClickReceipt.bind(this)} >Login</button>
                             <button className="login_receipt" onClick={this.onHandleClicksCancel} >Cancel</button>

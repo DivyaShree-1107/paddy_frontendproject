@@ -11,8 +11,8 @@ import Receipt from './Component/Receipt/Receipt';
 import StripeProvider1 from './Component/CheckoutForm/StripeProvider1';
 
 // import { Elements, StripeProvider } from 'react-stripe-elements';
-import CheckoutForm from './Component/CheckoutForm/CheckoutForm';
-import Dummy from './Component/Dummy/Dummy';
+// import CheckoutForm from './Component/CheckoutForm/CheckoutForm';
+// import Dummy from './Component/Dummy/Dummy';
 
 
 const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
@@ -33,7 +33,7 @@ function App() {
       <Router>
 
         <switch>
-          <Route exact path="/" component={Buyform}></Route>
+          <Route exact path="/" component={Receipt}></Route>
           <PrivateRoute exact path='/info' component={Info}></PrivateRoute>
           <Route exact path='/register' component={Register}></Route>
           <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute>

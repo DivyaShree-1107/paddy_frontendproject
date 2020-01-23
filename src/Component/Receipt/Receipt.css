@@ -1,12 +1,10 @@
 .rec_tle{
-    font-size: 7.5rem;
+    font-size: 2.5rem;
     color: #180c85;
-    margin-top: -51px;
-    padding-bottom: 15px;
 
 }
 .rec_label{
-    font-size: 55px;
+    font-size: 25px;
 }
 .recep{
     font-size: 25px;
@@ -14,44 +12,46 @@
     width: 100px;
 }
 .recep_inp{
-    width: 450px;
-    height: 67px;
-    margin-left: 126px;
-    font-size: 40px;
+    width: 250px;
+    height: 36px;
+    margin-left: 43px;
+    font-size: 20px;
 }
 .recep_inp2{
-    width: 450px;
-    height: 67px;
-    margin-left: 35px;
-    font-size: 40px;
+    width: 250px;
+    height: 36px;
+    margin-left: 5px;
+    font-size: 20px;
 }
 .login_receipt{
-    font-size: 40px;
-    width: 190px;
-    height: 71px;
+    font-size: 25px;
+    width: 119px;
+    height: 42px;
     background-color: rgb(73, 73, 231);
     color: white;
-    margin-left: 44px;
+    margin-left: 40px;
+    border-radius: 20px;
 }
 .receipt_body{
     background-position: center;
     background: url('./recep1.jpeg') no-repeat;
     border: solid 1px cornsilk;
     background-size: cover;
-    height: 1500px;
-    width: 3099px;
+    height: 900px;
+    width: 1599px;
 }
-.recep_body{
-    height: 450px;
+.recep_body {
+    height: 263px;
     background-color: #b5e6f885;
     border-radius: 25px;
-    margin-top: 151px;
-    padding: 83px;
+    margin-top: 42px;
+    padding: -29px;
+    margin-left: 543px;
 }
 .card1_receipt{
-    width: 1063px;
-    margin-left: 1014px;
-    margin-top: 150px;
-    background-color: #238fecd9;
-    box-shadow: 25px 25px 25px 25px #a9b2af;
+    border: 2px solid black;
+    font-size: 20px;
+    margin-left: 547px;
+    margin-top: 59px;
+    width: 500px;
 }
