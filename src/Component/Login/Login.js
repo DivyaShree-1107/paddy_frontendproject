@@ -59,6 +59,9 @@ class Login extends Component {
         BrowserHistory.push('/login');
 
     }
+    onHandleClickforgot=()=>{
+        BrowserHistory.push('/')
+    }
 
 
     onHandleClick = (e) => {
@@ -92,7 +95,8 @@ class Login extends Component {
 
                             <button onClick={this.onHandleClick} className="btn1_login"><b>Login</b></button>
                             <button onClick={this.onHandleClickRegister} className="btn3_login"><b>Register</b></button>
-                            <br /><br/>
+                            <br />
+                            <a className="btn4_login" onClick={this.onHandleClickforgot} >Forgot Password?</a><br/>
                             <a className="btn2_login" href="#" onClick={this.onHandleClicksCancel}>Cancel</a>
                         </div>
                    

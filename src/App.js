@@ -9,6 +9,8 @@ import Buyform from './Component/Buyform/Buyform';
 import Login from './Component/Login/Login';
 import Receipt from './Component/Receipt/Receipt';
 import StripeProvider1 from './Component/CheckoutForm/StripeProvider1';
+import fpfirst from './Component/Forgotpass/fpfirst';
+import fpsecond from './Component/Forgotpass/fpsecond';
 
 // import { Elements, StripeProvider } from 'react-stripe-elements';
 // import CheckoutForm from './Component/CheckoutForm/CheckoutForm';
@@ -33,7 +35,8 @@ function App() {
       <Router>
 
         <switch>
-          <Route exact path="/" component={Receipt}></Route>
+          <Route exact path="/" component={fpfirst}></Route>
+          <Route exact path="/fpsecond" component={fpsecond}></Route>
           <PrivateRoute exact path='/info' component={Info}></PrivateRoute>
           <Route exact path='/register' component={Register}></Route>
           <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute>

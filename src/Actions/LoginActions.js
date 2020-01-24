@@ -30,10 +30,10 @@ export function loginHandle(userdata) {
                 debugger
                 sessionStorage.setItem('authentication', response.data.token)
             sessionStorage.setItem('role', response.data.role)
-                if(!response.data.Admin)
-                {
+                // if(!response.data.Admin)
+                // {
                     BrowserHistory.push('/dashboard')
-                }
+                // }
                 
                 // dispatch(SuccessFunc(ActionTypes.ADD_LOGIN_SUCCESS, response.data));
                 // BrowserHistory.push('/dashboard');

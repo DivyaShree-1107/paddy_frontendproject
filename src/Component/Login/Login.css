@@ -59,6 +59,11 @@ background: url('./login2.jpeg') no-repeat;
 }
 .btn2_login{
     font-size: 23px;
+    color: #459db7;
+}
+.btn4_login{
+    font-size: 23px;
+    color: #459db7;
 }
 .btn3_login{
     height: 46px;
