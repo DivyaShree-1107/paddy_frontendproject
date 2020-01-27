@@ -10,19 +10,19 @@ width: 3099px;
 }
 .contact_us{
     background-color: rgb(124, 129, 46);
-    height: 950px;
-    width: 670px;
+    height: 550px;
+    width: 470px;
     border-radius: 50px;
     margin-left: 251px;
-    margin-left: 451px;
-    margin-top: 53px;
-    padding-top: 100px;
+    margin-left: 151px;
+    margin-top: 30px;
+    padding-top: -1px;
 
 }
 .heading{
     padding-top: 118px;
     padding-left: 26px;
-    font-size: 56px;
+    font-size: 33px;
  
 }
 .space{
@@ -32,7 +32,7 @@ width: 3099px;
     text-align: left;
     padding-top: 56px;
     width: 900px;
-    margin-left: 250px;
+    margin-left: -350px;
 }
 
 
@@ -46,7 +46,7 @@ width: 3099px;
     margin-right: 415px;
 }
 .img_paddy{
-    width: 160px;
+    width: 117px;
     border-radius: 50%;
     z-index: 2;
     top: 96px;
@@ -55,8 +55,8 @@ width: 3099px;
 }
 .infotitle{
    color: rgb(124, 129, 46);
-    font-size: 48px;
-    margin-left: -373px;
+   font-size: 24px;
+   margin-left: -409px;
    
 }
 .page{
@@ -70,23 +70,22 @@ width: 3099px;
     -webkit-mask-box-image-width: 2px;
     mask-border-width: 2px;
     color: black;
-    width: 65%;
+    width: 45%;
     background-color: #ffffff00;
+    font-size: 25px;
 }
 .name1{
-    padding: 31px;
+    padding: 5px 50px 5px 0px;
     color: black;
-    font-size: 50px;
+    font-size: 23px
 }
 
 .submitt_contact{
-    height: 80px;
-    width: 250px;
-    font-size: 53px;
+    height: 40px;
+    width: 196px;
+    font-size: 25px;
     color: black;
     background-color: rgb(124, 129, 46);
-
-    margin-top: 26px
     
    
 }

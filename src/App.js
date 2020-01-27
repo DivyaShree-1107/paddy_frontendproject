@@ -35,7 +35,8 @@ function App() {
       <Router>
 
         <switch>
-          <Route exact path="/" component={fpfirst}></Route>
+          <Route exact path="/" component={Login}></Route>
+          {/* <Route exact path="/fpfirst" component={fpfirst}></Route> */}
           <Route exact path="/fpsecond" component={fpsecond}></Route>
           <PrivateRoute exact path='/info' component={Info}></PrivateRoute>
           <Route exact path='/register' component={Register}></Route>

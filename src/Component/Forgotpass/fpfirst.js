@@ -3,6 +3,8 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { emailHandle } from '../../Actions/RemailActions';
+import BrowserHistroy from '../utils/BrowserHistroy';
+
 
 
 
@@ -19,14 +21,19 @@ class fpfirst extends Component {
             Email:event.target.value 
                 })
     }
-    onhandlerecoverysubmit=(e)=>{
-        debugger
-        e.preventDefault();
-        const payload = {
-            Email: this.state.Email
+    confirmmail=(e)=>{
+        sessionStorage.setItem('change',this.state.email)
+        BrowserHistroy.push('/fpsecond');
     }
-    this.props.emailHandle(payload);
-  }
+//     onhandlerecoverysubmit=(e)=>{
+//         debugger
+//         e.preventDefault();
+//         const payload = {
+//             Email: this.state.Email
+//     }
+//     this.props.emailHandle(payload);
+    
+//   }
 
     render() {
         return (
@@ -34,7 +41,7 @@ class fpfirst extends Component {
                 <div>
                     <h2>Please enter the recovery Email Id</h2>
                     <input type="email" onChange={this.onrecoverymail}></input>
-                    <button value="submit" onClick={this.onhandlerecoverysubmit}>submit</button>
+                    <button value="submit" onClick={this.confirmmail}>submit</button>
     
                 </div>
                     

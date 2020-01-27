@@ -204,9 +204,9 @@ class Buyform extends Component {
               <input type="email" name="Email" className="one_buy" onChange={this.onHandleChange} /><br />
               <p className="error_buy" >{this.state.merr}</p>
               <label className="label_buy6"><b>Date:</b></label>
-              <input type="date" name="Type" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+              <input type="date" name="Type" className="one_buy" onChange={this.onHandleChange} /><br />
               <label className="label_buy7" ><b>Acc Name:</b></label>
-              <input type="text" name="AccName" className="one_buy" onChange={this.onHandleChange} /><br /><br />
+              <input type="text" name="AccName" className="one_buy" onChange={this.onHandleChange} /><br />
               <label className="label_buy8" ><b>Acc Number:</b></label>
               <input type="number" name="AccNumber" className="one_buy" onChange={this.onHandleChange} /><br /><br />
               <button onClick={this.onHandleClick} className="btn1_sub">Submit</button>

@@ -33,7 +33,7 @@ class Login extends Component {
         super(props);
         this.state = {
 
-            Mobnum: '',
+            email: '',
             password: '',
             uerr: '',
             perr: ''
@@ -60,7 +60,9 @@ class Login extends Component {
 
     }
     onHandleClickforgot=()=>{
-        BrowserHistory.push('/')
+        sessionStorage.setItem('change',this.state.email)
+       
+        BrowserHistory.push('/fpsecond')
     }
 
 
@@ -69,7 +71,7 @@ class Login extends Component {
         e.preventDefault();
         const payload = {
             password: this.state.password,
-            Mobnum: this.state.Mobnum
+            email: this.state.email
 
         }
 
@@ -86,8 +88,8 @@ class Login extends Component {
                             <span id="LoginTitle">Login</span><br />
 
 
-                            <label id="login_subtle" >Mob Number</label>
-                            <input type="text" name="Mobnum" className="one_login" onChange={this.onHandleChange} /><br />
+                            <label id="login_subtle" >Email ID</label>
+                            <input type="text" name="email" className="one_login" onChange={this.onHandleChange} /><br />
                             <p >{this.state.uerr}</p>
                             <label id="login_subtle"  >Password</label>
                             <input type="password" name="password" className="one_login_p" onChange={this.onHandleChange} /><br />
@@ -96,7 +98,7 @@ class Login extends Component {
                             <button onClick={this.onHandleClick} className="btn1_login"><b>Login</b></button>
                             <button onClick={this.onHandleClickRegister} className="btn3_login"><b>Register</b></button>
                             <br />
-                            <a className="btn4_login" onClick={this.onHandleClickforgot} >Forgot Password?</a><br/>
+                            <a id="btn4_login" onClick={this.onHandleClickforgot} >Forgot Password?</a><br/>
                             <a className="btn2_login" href="#" onClick={this.onHandleClicksCancel}>Cancel</a>
                         </div>
                    
