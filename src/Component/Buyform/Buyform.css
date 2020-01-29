@@ -32,8 +32,8 @@ height: 100%;
     box-shadow: 30px 30px 30px 30px #1c2c1c;
     background-color: #8fbc8761;
     padding-left: 130px;
-    height: 682px;
-    margin-top: 15px;
+    height: 610px;
+    margin-top: 7px;
 }
 .btn1_sub{
     height: 36px;
@@ -88,53 +88,49 @@ width: 1703px;
     font-size: 20px;
 }
 .tle_buy{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #141514;
     padding-top: -1px;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 .one_buy{
-    font-size: 19px;
+    font-size: 18px;
+    height: 30px;
 }
 .label_buy1 {
-    font-size: 23px;
-   
+    font-size: 20px;
 }
 .label_buy2{
-    font-size: 23px;
-   
-    margin-left: -31px;
+    font-size: 20px;
+    margin-left: -27px;
 }
 .label_buy3{
-    font-size: 23px;
-
-    margin-left: -72PX;
+    font-size: 20px;
+    margin-left: -64px;
 }
 .label_buy4{
-    font-size: 23px;
-   
-    margin-left: -30px;
+    font-size: 20px;
+    margin-left: -29px;
 }
 .label_buy5{
-    font-size: 23px;
-    
+    font-size: 20px;
     margin-left: 3px;
-    
+}
+.label_buy51{
+    font-size: 20px;
+    margin-left: -5px;
 }
 .label_buy6{
-    font-size: 23px;
-
-    margin-left: 14px;
+    font-size: 20px;
+    margin-left: 8px;
 }
 .label_buy7{
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 15px;
     margin-left: -46px;
-
-
 }
 .label_buy8{
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 15px;
     margin-left: -68px;
 }

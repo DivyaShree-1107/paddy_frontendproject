@@ -27,46 +27,16 @@ class Buyform extends Component {
       Price: '',
       Type: '',
       AccName: '',
-      Mail:'',
+      Mail: '',
       budgetini: 1000,
       AccNumber: '',
-      Users: [],
+      Users: []
 
     };
   }
-
-
-  // onHandleChangeBudget=()=>{
-  //     this.setState({ [event.target.name]: event.target.value });
-  // }
-
   onHandleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   }
-
-  // onHandleClicks = (e) => {
-  //     BrowserHistory.push('/dashboard');
-  // }
-
-  // onHandleClicksCancel = (e) => {
-
-  //     BrowserHistory.push('/dashboard');
-
-  // }
-
-  // onHandleClick = (e) => {
-  //     debugger;
-  //     e.preventDefault();
-  //     const payload = {
-  //         Firstname: this.state.Firstname,
-  //         Username: this.state.Username,
-  //         email: this.state.email,
-  //         password: this.state.password,
-  //         Confirmpassword: this.state.Confirmpassword,
-  //         Mobnum: this.state.Mobnum
-
-  //         }
-
   onHandleClick = (e) => {
     e.preventDefault();
     const payload = {
@@ -78,19 +48,9 @@ class Buyform extends Component {
       Type: this.state.Type,
       AccName: this.state.AccName,
       AccNumber: this.state.AccNumber,
-      Email:this.state.Email
+      Email: this.state.Email
 
     }
-    // buyform(reqst).then(res => {
-
-
-    //     BrowserHistory.push('/dashboard')
-
-
-    // })
-    // BrowserHistory.push('/stripeprovider')
-
-
     if (this.state.Name.length === 0 && this.state.Address.length === 0 && this.state.RTCNumber.length === 0 && this.state.Quantity.length === 0 && this.state.Price.length === 0 && this.state.Type.length === 0) {
       this.setState({
         nerr: "Name is required",
@@ -98,9 +58,10 @@ class Buyform extends Component {
         qerr: "Please mention the quantity",
         perr: "Enter the price",
         terr: "Mention the Type of Paddy",
-        merr:"Enter the mail Id"
+        merr: "Enter the mail Id"
 
       })
+
     }
     else if (this.state.Name.length === 0) {
       this.setState({ nerr: "Name is required" })
@@ -117,13 +78,8 @@ class Buyform extends Component {
     else if (this.state.Type.length === 0) {
       this.setState({ terr: "Mention the Type of Paddy" })
     }
-
-    //     else {
-    //         BrowserHistory.push('/dashboard')
-    //     this.Loginaction.props.success("Buy form filled")
-    //     }
-
     this.props.buyHandle(payload);
+    BrowserHistory.push('/stripeprovider')
   }
 
   componentDidMount() {
@@ -141,28 +97,6 @@ class Buyform extends Component {
         totalgrnt = totalgrnt + user.Price
       })
     }
-
-
-    // let itemList = this.state.Users.map(user => {
-    //     return (
-    //     <div className="card1" key={user.id}>
-    //     <tr>
-    //     {/* <td>{user.Name}</td>
-    //     <td>{user.Address}</td>
-    //     <td>{user.RTCNumber}</td>
-    //     <td>{user.Quantity}</td> */}
-    //     <td>{user.Price}</td>
-    //     {this.setState({totalgrnt:this.state.totalgrnt+user.Price})}
-
-    //     {/* <td>{user.Type}</td>            
-    //     <td>{user.AccName}</td>
-    //     <td>{user.AccNumber}</td> */}
-
-    //     </tr>
-    //     </div>
-    //     )
-
-    //     })
     return (
       <div className="register">
         <Navbar />
@@ -186,22 +120,22 @@ class Buyform extends Component {
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm_buy">
               <h1 className="tle_buy">Buy form</h1>
               <label className="label_buy1"><b>Name:</b></label>
-              <input type="text" name="Name" className="one_buy" onChange={this.onHandleChange} /><br />
+              <input type="text" name="Name" className="one_buy" onChange={this.onHandleChange} />
               <p className="error_buy">{this.state.nerr}</p>
               <label className="label_buy2"><b>Address:</b></label>
-              <input type="text" name="Address" className="one_buy" onChange={this.onHandleChange} /><br />
+              <input type="text" name="Address" className="one_buy" onChange={this.onHandleChange} />
               <p className="error_buy">{this.state.aerr}</p>
               <label className="label_buy3" ><b>RTCNumber:</b></label>
-              <input type="number" name="RTCNumber" className="one_buy" onChange={this.onHandleChange} /><br />
+              <input type="number" name="RTCNumber" className="one_buy" onChange={this.onHandleChange} />
               <p className="error_buy">{this.state.rtcerr}</p>
               <label className="label_buy4"><b>Quantity:</b></label>
-              <input type="number" name="Quantity" className="one_buy" onChange={this.onHandleChange} /><br />
+              <input type="number" name="Quantity" className="one_buy" onChange={this.onHandleChange} />
               <p className="error_buy">{this.state.qerr}</p>
               <label className="label_buy5"><b>Price:</b></label>
-              <input type="number" name="Price" className="one_buy" onChange={this.onHandleChange} /><br />
+              <input type="number" name="Price" className="one_buy" onChange={this.onHandleChange} />
               <p className="error_buy" >{this.state.perr}</p>
-              <label className="label_buy5"><b>MailId:</b></label>
-              <input type="email" name="Email" className="one_buy" onChange={this.onHandleChange} /><br />
+              <label className="label_buy51"><b>MailId:</b></label>
+              <input type="email" name="Email" className="one_buy" onChange={this.onHandleChange} />
               <p className="error_buy" >{this.state.merr}</p>
               <label className="label_buy6"><b>Date:</b></label>
               <input type="date" name="Type" className="one_buy" onChange={this.onHandleChange} /><br />

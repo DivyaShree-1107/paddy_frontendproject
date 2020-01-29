@@ -29,8 +29,9 @@ export function loginHandle(userdata) {
             .then(response => {
                 debugger
                 sessionStorage.setItem('authentication', response.data.token)
-            sessionStorage.setItem('role', response.data.role)
-                // if(!response.data.Admin)
+                sessionStorage.setItem('role', response.data.role)
+                sessionStorage.setItem('Firstname', response.data.Firstname)
+               // if(!response.data.Admin)
                 // {
                     BrowserHistory.push('/dashboard')
                 // }
@@ -41,5 +42,6 @@ export function loginHandle(userdata) {
             .catch(error => {
                 dispatch(ErrorFunc(ActionTypes.ADD_LOGIN_FAILURE, error));
             });
+            
     };
 }

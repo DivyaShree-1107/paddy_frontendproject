@@ -134,7 +134,7 @@ class Register extends Component {
       <div >
         <div className="row reg_body">
           <div className="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-          <img className='regimg' src={regimg} ></img>
+         
           </div>
           <div className="col-sm-6 col-lg-6 col-md-6 col-xs-6 frm_reg">
 

@@ -36,8 +36,6 @@ class CheckoutForm extends Component {
           </div>
           <div class="col-sm-9 col-lg-9 col-md-9 col-xs-9">
             <div className="Checkout">
-              <h3 className="bill_head">Payment Method</h3>
-              <CardElement />
               <h3 className="bill_head">Billing Addres</h3>
               <label className="bill_label">Name</label><input className="bill_input1"></input><br/>
               <label className="bill_label">Address</label><input className="bill_input2"></input><br/>
@@ -47,7 +45,8 @@ class CheckoutForm extends Component {
               <label className="bill_label">Amount</label><input className="bill_input6"></input><br/>
               <label className="bill_label">Phone no</label><input className="bill_input7"></input><br/>
               <label className="bill_label">Email</label><input className="bill_input8" ></input><br/>
-
+              <h3 className="bill_head">Payment Method</h3>
+              <CardElement />
               <button class="pay" onClick={this.submit}>Proceed to Purchase</button>
             </div>
           </div>

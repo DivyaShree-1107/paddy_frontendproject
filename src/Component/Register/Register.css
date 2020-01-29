@@ -31,7 +31,8 @@ padding-top: 25px;
 }
 .frm_reg{
     padding-left: 147px;
-    background-color: #c8e9e303;
+    background-color: #c6f59c82;
+    height: 626px;
     margin-left: -35px;
 }
 .card-title{
@@ -39,6 +40,7 @@ padding-top: 25px;
     font-size: 40px;
     margin-left: -80px;
     margin-bottom: 11px;
+
 }
 .card_body{
     background-color: lightpink;
@@ -104,15 +106,17 @@ padding-top: 25px;
 .already{
     
     font-size: 21px;
-    color: #28687d;
+    color:#137696;
     margin-left: -354px;
 }
 .cancel_reg{
     font-size: 23px;
     margin-left: 56px;
-    color: #28687d;
+    color: #137696;
    }
    .error_reg{
        color: red;
        font-size: 25px;
    }
+
+  

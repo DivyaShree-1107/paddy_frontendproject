@@ -34,7 +34,6 @@ class fpfirst extends Component {
 //     this.props.emailHandle(payload);
     
 //   }
-
     render() {
         return (
             <div>
