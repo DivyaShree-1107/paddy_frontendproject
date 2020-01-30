@@ -7,10 +7,10 @@
     font-size: 30px;
     margin-bottom: 24px;
     margin-left: 90px;
-
+    color: white;
 }
 .card-text_buy{
-    font-size: 24px;
+    font-size: 22px;
     margin-top: -27px;
     padding: 11px;
     color: white;
@@ -21,18 +21,17 @@
 }
 .register
 {
-       background-color: #8fbc8761;
-padding-top: 30px;
-width: 100%;
-height: 100%;
+    background-color: #8fbc8761;
+    width: 100%;
+    height: 100%;
 
 }
 .frm_buy
 {
     box-shadow: 30px 30px 30px 30px #1c2c1c;
-    background-color: #8fbc8761;
+    background-color:#acd2b9d1;
     padding-left: 130px;
-    height: 610px;
+    height: auto;
     margin-top: 7px;
 }
 .btn1_sub{
@@ -81,7 +80,7 @@ width: 1703px;
     height: 295px;
     font-size: 23px;
     margin-top: 50px;
-    background-color: #8fbc8761;
+    background-color: #040404;
     box-shadow: 27px 31px 30px 30px #364735;
 }
 .updates_btn{
@@ -139,4 +138,9 @@ width: 1703px;
     padding-top: 5px;
     width: 236px;
     margin-left: 31px;
+}
+.one_buy_calendar{
+    font-size: 18px;
+    width: 236px;
+    height: 33px
 }

@@ -74,7 +74,7 @@ class Dashboard extends Component {
               <h2 className="head_dash">Your "Paddy Portal" to the Worldwide Rice Industry</h2>
               <p className="para_dash">RiceOnline is the premier web portal for the most comprehensive rice information from the worldwide rice industry. You subscription includes weekly issues of the Creed Rice Market Report with the most comprehensive rice market insight available as well as unlimited access to the resources on riceonline.com. Sign up today and get the information you need to buy, sell and trade rice and rice products around the world.</p>
             </div>
-            <div class="col-xs-4 tall">
+            <div class="col-xs-4 tall para_stick">
               <div class="related_side">
                 Rice News From Around the World
                     </div>
@@ -93,11 +93,8 @@ class Dashboard extends Component {
               </div>
             </div>
           </div>
-
         </div>
-
         <div>
-
           <h3 className="img_title">Famous Paddy Varieties</h3>
           <div class="card-columns">
             <div class=" one_card">
@@ -133,11 +130,7 @@ class Dashboard extends Component {
                 </div>
               </div>
             </div>
-
           </div>
-
-
-          {/* second line// */}
           <div class="card-columns">
             <div class=" one_card">
               <div class="card" >
@@ -173,16 +166,11 @@ class Dashboard extends Component {
               </div>
             </div>
           </div>
-
-
         </div>
         <Footer />
       </div>
     )
   }
-
-
 }
-
 
 export default Dashboard;

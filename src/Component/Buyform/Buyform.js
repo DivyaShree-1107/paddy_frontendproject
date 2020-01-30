@@ -8,14 +8,11 @@ import { buyHandle } from '../../Actions/BuyActions';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import BrowserHistory from '../utils/BrowserHistroy'
-import { buyform } from '../userFunctions';
+// import { buyform } from '../userFunctions';
 import axios from 'axios';
 
 
 var totalgrnt = 0;
-
-
-
 class Buyform extends Component {
   constructor(props) {
     super(props);
@@ -28,14 +25,16 @@ class Buyform extends Component {
       Type: '',
       AccName: '',
       Mail: '',
-      budgetini: 1000,
+      budgetini: 100000,
       AccNumber: '',
       Users: []
-
     };
   }
   onHandleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
+  }
+  onHandleClicksCancel=(e)=>{
+    BrowserHistory.push('/buy')
   }
   onHandleClick = (e) => {
     e.preventDefault();
@@ -78,8 +77,10 @@ class Buyform extends Component {
     else if (this.state.Type.length === 0) {
       this.setState({ terr: "Mention the Type of Paddy" })
     }
-    this.props.buyHandle(payload);
+    else{
+     this.props.buyHandle(payload);
     BrowserHistory.push('/stripeprovider')
+    }
   }
 
   componentDidMount() {
@@ -138,7 +139,7 @@ class Buyform extends Component {
               <input type="email" name="Email" className="one_buy" onChange={this.onHandleChange} />
               <p className="error_buy" >{this.state.merr}</p>
               <label className="label_buy6"><b>Date:</b></label>
-              <input type="date" name="Type" className="one_buy" onChange={this.onHandleChange} /><br />
+              <input type="date" name="Type" className="one_buy_calendar" onChange={this.onHandleChange} /><br />
               <label className="label_buy7" ><b>Acc Name:</b></label>
               <input type="text" name="AccName" className="one_buy" onChange={this.onHandleChange} /><br />
               <label className="label_buy8" ><b>Acc Number:</b></label>

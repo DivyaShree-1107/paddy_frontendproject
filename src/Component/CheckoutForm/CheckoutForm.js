@@ -18,16 +18,15 @@ class CheckoutForm extends Component {
       headers: { "Content-Type": "text/plain" },
       body: token.id
     });
-
     if (response.ok)
-      alert("Your booking successfully")
+      alert("Payment successfull")
     if (response.ok) this.setState({ complete: true });
 
   }
 
   render() {
-    if (this.state.complete) return <h1>Purchase Complete</h1>;
-    return (
+    if (this.state.complete) return <h1  className="card_bg">Successfully completed the purchase. Thank you.</h1>;
+     return (
       <div class="container_check">
         <div class="row container_check_row">
           <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">

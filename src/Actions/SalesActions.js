@@ -19,11 +19,11 @@ export function ErrorFunc(ActionType, error) {
         payload: { error }
     }
 }
-export function loginHandle(userdata) {
+export function salesHandle(userdata) {
     debugger
     return dispatch => {
-        dispatch(BeginFunc(ActionTypes.ADD_SIGNUP_BEGIN));
-        HttpWrapper('POST', '/Signin', false, userdata)
+        dispatch(BeginFunc(ActionTypes.ADD_SIGNUP_BEGIN_SALES));
+        HttpWrapper('POST', '/sales', false, userdata)
             .then(response => {
                 debugger
                 sessionStorage.setItem('authentication', response.data.token)
@@ -34,11 +34,11 @@ export function loginHandle(userdata) {
                     BrowserHistory.push('/dashboard')
                 // }
                 
-                // dispatch(SuccessFunc(ActionTypes.ADD_LOGIN_SUCCESS, response.data));
+                dispatch(SuccessFunc(ActionTypes.ADD_SIGNUP_SUCCESS_SALES, response.data));
                 // BrowserHistory.push('/dashboard');
             })
             .catch(error => {
-                dispatch(ErrorFunc(ActionTypes.ADD_LOGIN_FAILURE, error));
+                dispatch(ErrorFunc(ActionTypes.ADD_SIGNUP_FAILURE_SALES, error));
             });
             
     };

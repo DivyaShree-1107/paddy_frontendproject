@@ -40,6 +40,9 @@ class Navbar extends Component {
   receipt(){
     BrowserHistroy.push('/receipt');
   }
+  // sell(){
+  //   BrowserHistroy.push('/sell')
+  // }
   componentDidMount(){
     if(sessionStorage.getItem('role')=='user')
     {
@@ -75,13 +78,16 @@ class Navbar extends Component {
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text" >
           <button hidden={this.state.hide} onClick={this.Buy} className="nav_button">Buy</button>
         </div>
+        {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text" >
+          <button hidden={this.state.show} onClick={this.sell} className="nav_button">Sell</button>
+        </div> */}
        
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text" >
           <button hidden={this.state.show} onClick={this.receipt} className="nav_button">Receipt</button>
         </div>
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text">
           <img className="nav_logo_img" src={user} />
-       <label  className="nav_button_user">{sessionStorage.getItem('Firstname')}</label>
+          <label  className="nav_button_user">{sessionStorage.getItem('Firstname')}</label>
         </div>
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 nav_text" >
           <button onClick={this.Logout} className="nav_button">Logout</button>

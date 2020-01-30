@@ -1,0 +1,21 @@
+#frgtpassw{
+    z-index: 1;
+    position: relative;
+    top: 50px;
+    right: 472px;
+}
+.forgot_cont{
+    background: url('./forgotbg.jpg') no-repeat;
+    border: solid 1px cornsilk;
+    background-size: cover;
+    height: 800px;
+    width: 1500px;
+}
+.forgt_label{
+    color: white;
+    margin: 20px 20px 30px 950px;
+    font-size: 33px;
+}
+.frgt_sub{
+    margin-left: 950px;
+}

@@ -27,6 +27,18 @@ const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
   />
 );
 
+const PrivateRoute1 = ({ component: IncomingComponent, ...rest }) => (
+  <Route
+    {...rest}
+    render={props => (
+      (sessionStorage.getItem('role')=='admin') ? (<IncomingComponent {...props} />) : (
+        <Redirect to={{ pathname: '/dashboard', state: { from: props.location }, }} />)
+    )}
+  />
+);
+
+
+
 
 function App() {
   return (
@@ -42,10 +54,10 @@ function App() {
           <Route exact path='/register' component={Register}></Route>
           <PrivateRoute exact path='/contact' component={Contact}></PrivateRoute>
           <Route exact path='/login' component={Login}></Route>
-          <PrivateRoute exact path='/buy' component={Buyform}></PrivateRoute>
+          <PrivateRoute1 exact path='/buy' component={Buyform}></PrivateRoute1>
           <PrivateRoute exact path='/receipt' component={Receipt}></PrivateRoute>
           <PrivateRoute exact path='/dashboard' component={Dashboard}></PrivateRoute>
-          <PrivateRoute exact path='/stripeprovider' component={StripeProvider1}></PrivateRoute>
+          <PrivateRoute1 exact path='/stripeprovider' component={StripeProvider1}></PrivateRoute1>
 
         </switch>
       </Router>

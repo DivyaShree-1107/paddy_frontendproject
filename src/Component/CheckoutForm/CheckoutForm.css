@@ -137,3 +137,17 @@
     margin-left: 55px;
     margin-top: 6px;
 } 
+.card_bg{
+  background: rgb(238,174,202);
+background: linear-gradient(112deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+padding: 150px 25px 150px 20px;
+    height: 700px;
+    width: auto;
+    font-size: 60px;
+}
+.pay_back{
+  z-index: 2;
+    position: relative;
+    top: -468px;
+    font-size: 30px;
+}

@@ -56,6 +56,15 @@ class Register extends Component {
 
 
   onHandleClick = (e) => {
+    this.setState({
+      ferr: "",
+      lerr: "",
+      uerr: "",
+      perr: "",
+      cperr: "",
+      phnerr: ""
+
+    })
     debugger;
     e.preventDefault();
     const payload = {
@@ -78,55 +87,102 @@ class Register extends Component {
         perr: "Password is required",
         cperr: "ConrimPassword is required",
         phnerr: "Phonumber is required"
-
+      })
+      
+    }
+    if ( this.state.Username.length === 0 && this.state.email.length === 0 && this.state.password.length === 0 && this.state.Confirmpassword.length === 0 && this.state.Mobnum.length === 0) {
+      this.setState({
+        lerr: "Lastname is required",
+        uerr: "Email is required",
+        perr: "Password is required",
+        cperr: "ConrimPassword is required",
+        phnerr: "Phonumber is required"
       })
     }
-    else if (this.state.Firstname.length === 0) {
-      this.setState({ ferr: "Firstname is required" })
+    if (this.state.Firstname.length === 0  && this.state.email.length === 0 && this.state.password.length === 0 && this.state.Confirmpassword.length === 0 && this.state.Mobnum.length === 0) {
+      this.setState({
+        ferr: "Firstname is required",
+      
+        uerr: "Email is required",
+        perr: "Password is required",
+        cperr: "ConrimPassword is required",
+        phnerr: "Phonumber is required"
+      })
     }
-    else if (this.state.Username.length === 0) {
-      this.setState({ lerr: "Lastname is required" })
-    }
-    else if (this.state.email.length === 0) {
-      this.setState({ uerr: "Username is required" })
-    }
-    else if (this.state.password.length === 0) {
-      this.setState({ perr: "Password is required" })
-    }
-    else if (this.state.Confirmpassword.length === 0) {
-      this.setState({ Cperr: "Password is required" })
-    }
-    else if (this.state.Mobnum.length === 0) {
-      this.setState({ phnerr: "Password is required" })
-    }
-
-    else if (!this.state.Firstname.match(/^[A-Za-z]{5,15}$/)) {
-      this.setState({ ferr: "Please enter the valid fname" })
-    }
-    else if (!this.state.Username.match(/^[A-Za-z]{5,15}$/)) {
-      this.setState({ lerr: "Please enter the valid lname" })
-    }
-    else if (!this.state.email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]$/)) {
-      this.setState({ uerr: "Please enter the valid email" })
-    }
-    else if (!this.state.password.match(/^[A-Za-z0-9]{6,11}$/)) {
-      this.setState({ perr: "Please enter the valid password" })
-    }
-    else if (!this.state.Confirmpassword.match(/^[A-Za-z0-9]{6,11}$/)) {
-      this.setState({ cperr: "Please enter the valid password" })
-    }
-    else if (!this.state.Mobnum.match(/^[0-9]{10}$/)) {
-      this.setState({ phnerr: "Please enter the valid number" })
+    if (this.state.Firstname.length === 0 && this.state.Username.length === 0 && this.state.password.length === 0 && this.state.Confirmpassword.length === 0 && this.state.Mobnum.length === 0) {
+      this.setState({
+        ferr: "Firstname is required",
+        lerr: "Lastname is required",
+       
+        perr: "Password is required",
+        cperr: "ConrimPassword is required",
+        phnerr: "Phonumber is required"
+      })
     }
 
-    // else {
-    // BrowserHistory.push('/login')
-    // this.Loginaction.props.success("Register Successfully")
-    // }
-    this.props.registerHandle(payload);
+    if (this.state.Firstname.length === 0 && this.state.Username.length === 0 && this.state.email.length === 0 && this.state.Confirmpassword.length === 0 && this.state.Mobnum.length === 0) {
+      this.setState({
+        ferr: "Firstname is required",
+        lerr: "Lastname is required",
+        uerr: "Email is required",
+   
+        cperr: "ConrimPassword is required",
+        phnerr: "Phonumber is required"
+      })
+    }
 
-
-  }
+    if (this.state.Firstname.length === 0 && this.state.Username.length === 0 && this.state.email.length === 0 && this.state.password.length === 0 &&  this.state.Mobnum.length === 0) {
+      this.setState({
+        ferr: "Firstname is required",
+        lerr: "Lastname is required",
+        uerr: "Email is required",
+        perr: "Password is required",
+       
+        phnerr: "Phonumber is required"
+      })
+    }
+    if (this.state.Firstname.length === 0 && this.state.Username.length === 0 && this.state.email.length === 0 && this.state.password.length === 0 && this.state.Confirmpassword.length === 0) {
+      this.setState({
+        ferr: "Firstname is required",
+        lerr: "Lastname is required",
+        uerr: "Email is required",
+        perr: "Password is required",
+        cperr: "ConrimPassword is required",
+       
+      })
+    }  
+      else if (!this.state.Firstname.match(/^[A-Za-z]{5,15}$/)) {
+        this.setState({ ferr: "Please enter the valid fname" })
+      }
+      else if (!this.state.Username.match(/^[A-Za-z]{5,15}$/)) {
+        this.setState({ lerr: "Please enter the valid lname" })
+      }
+      else if (!this.state.email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]$/)) {
+        this.setState({ uerr: "Please enter the valid email" })
+      }
+      else if (!this.state.password.match(/^[@]+[A-Za-z0-9]{6,11}$/)) {
+        this.setState({ perr: "Please enter the valid password" })
+      }
+      else if (!this.state.Confirmpassword.match(/^[A-Za-z0-9]{6,11}$/)) {
+        this.setState({ cperr: "Please enter the valid password" })
+      }
+      else if (!this.state.Mobnum.match(/^[0-9]{10}$/)) {
+        this.setState({ phnerr: "Please enter the valid number" })
+      }
+  
+      // else {
+      // BrowserHistory.push('/login')
+      // this.Loginaction.props.success("Register Successfully")
+      // }
+      else 
+      this.props.registerHandle(payload);
+  
+  
+    }
+    
+    
+    
+    
 
 
   render() {
